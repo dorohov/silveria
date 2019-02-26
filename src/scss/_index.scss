@@ -1,0 +1,146 @@
+.in {
+    &-categories {
+        margin-bottom: 100px;
+        &__inner {
+            @extend .container;
+            ul {
+                margin: 0 -15px;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                li {
+                    width: 100%;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &-collections {
+        margin-bottom: 110px;
+        &__inner {
+            @extend .container;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li {
+                    overflow: hidden;
+                    &.is--one {
+                        width: 65%;
+                        background: #F3F3F6;
+                        margin-bottom: 3px;
+                        .in-collections {
+                            &__block {
+                                &__text {
+                                    left: 60px;
+                                    top: 55px;
+                                }
+                            }
+                        }
+                    }
+                    &.is--two {
+                        width: 35%;
+                        background: transparent;
+                        margin-bottom: 3px;
+                        a {
+                            padding-bottom: 130px;
+                        }
+                        .in-collections {
+                            &__block {
+                                &__img {
+                                    margin-top: -35px;
+                                }
+                                &__text {
+                                    left: 150px;
+                                    bottom: 45px;
+                                }
+                            }
+                        }
+                    }
+                    &.is--three {
+                        width: 100%;
+                        background: #E3DCD5;
+                        .in-collections {
+                            &__block {
+                                &__text {
+                                    left: 60px;
+                                    top: 55px;
+                                }
+                            }
+                        }
+                        a {
+                            padding-top: 70px;
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        padding: 35px 60px;
+                        position: relative;
+                    }
+                    &:hover {
+                        .in-collections {
+                            &__block {
+                                &__img {
+                                    img {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__block {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__img {
+                img {
+                    width: auto;
+                    height: 100%;
+                    transition: .25s all ease;
+                }
+            }
+            &__text {
+                position: absolute;
+                &__title {
+                    line-height: 26px;
+                    font-size: 24px;
+                    letter-spacing: 0.02em;
+                    font-family: 'Playfair Display SC';
+                    color: #1C1C1C;
+                    margin-bottom: 15px;
+                }
+                &__text {
+                    span {
+                        display: block;
+                        position: relative;
+                        padding-left: 40px;
+                        color: #545252;
+                        font-size: 18px;
+                        line-height: 36px;
+                        transition: .25s all ease;
+                        &:hover {
+                            letter-spacing: 1.5px;
+                        }
+                        &::before {
+                            position: absolute;
+                            content: url(../../img/svg/link.svg);
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

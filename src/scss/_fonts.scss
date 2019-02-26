@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: local('Playfair Display SC'), 
+        local('PlayfairDisplaySC-Regular'), 
+        url('../../fonts/playfairdisplaysc.woff2') format('woff2'), 
+        url('../../fonts/playfairdisplaysc.woff') format('woff'), 
+        url('../../fonts/playfairdisplaysc.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: local('Playfair Display SC Italic'), 
+        local('PlayfairDisplaySC-Italic'), 
+        url('../../fonts/playfairdisplayscitalic.woff2') format('woff2'), 
+        url('../../fonts/playfairdisplayscitalic.woff') format('woff'), 
+        url('../../fonts/playfairdisplayscitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: local('Playfair Display SC Bold'), 
+        local('PlayfairDisplaySC-Bold'), 
+        url('../../fonts/playfairdisplayscbold.woff2') format('woff2'), 
+        url('../../fonts/playfairdisplayscbold.woff') format('woff'), 
+        url('../../fonts/playfairdisplayscbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: local('Playfair Display SC Bold Italic'), 
+        local('PlayfairDisplaySC-BoldItalic'), 
+        url('../../fonts/playfairdisplayscbolditalic.woff2') format('woff2'), 
+        url('../../fonts/playfairdisplayscbolditalic.woff') format('woff'), 
+        url('../../fonts/playfairdisplayscbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: local('Playfair Display SC Black'), 
+        local('PlayfairDisplaySC-Black'), 
+        url('../../fonts/playfairdisplayscblack.woff2') format('woff2'), 
+        url('../../fonts/playfairdisplayscblack.woff') format('woff'), 
+        url('../../fonts/playfairdisplayscblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: local('Playfair Display SC Black Italic'), 
+        local('PlayfairDisplaySC-BlackItalic'), 
+        url('../../fonts/playfairdisplayscblackitalic.woff2') format('woff2'), 
+        url('../../fonts/playfairdisplayscblackitalic.woff') format('woff'), 
+        url('../../fonts/playfairdisplayscblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../../fonts/Circe-Regular.eot');
+	src: local('Circe'), local('Circe-Regular'),
+		url('../../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Circe-Regular.woff') format('woff'),
+		url('../../fonts/Circe-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../../fonts/Circe-ExtraLight.eot');
+	src: local('Circe ExtraLight'), local('Circe-ExtraLight'),
+		url('../../fonts/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Circe-ExtraLight.woff') format('woff'),
+		url('../../fonts/Circe-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../../fonts/Circe-Thin.eot');
+	src: local('Circe Thin'), local('Circe-Thin'),
+		url('../../fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Circe-Thin.woff') format('woff'),
+		url('../../fonts/Circe-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../../fonts/Circe-Light.eot');
+	src: local('Circe Light'), local('Circe-Light'),
+		url('../../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Circe-Light.woff') format('woff'),
+		url('../../fonts/Circe-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../../fonts/Circe-Bold.eot');
+	src: local('Circe Bold'), local('Circe-Bold'),
+		url('../../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Circe-Bold.woff') format('woff'),
+		url('../../fonts/Circe-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../../fonts/Circe-ExtraBold.eot');
+	src: local('Circe ExtraBold'), local('Circe-ExtraBold'),
+		url('../../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Circe-ExtraBold.woff') format('woff'),
+		url('../../fonts/Circe-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+

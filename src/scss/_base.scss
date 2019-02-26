@@ -1,0 +1,27 @@
+body {
+    @include gradient();
+    font-family: 'Circe';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: $resp768) {
+    body {
+        &.is--menu-open {
+            overflow: hidden;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+svg {
+    vertical-align: top;
+}

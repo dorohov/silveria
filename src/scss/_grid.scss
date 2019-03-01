@@ -4,3 +4,9 @@
     width: 100%;
     margin: 0 auto;
 }
+
+.page {
+    @extend .container;
+    padding-top: 30px;
+    padding-bottom: 110px;
+}

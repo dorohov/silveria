@@ -2,27 +2,27 @@
 <footer class="footer">
     <div class="footer__top">
         <div class="footer__top__inner">
-            <div class="footer__top__block">
+            <div class="footer__top__block is--mh">
                 <div class="footer__top__block__title">Каталог</div>
                 <nav class="footer__top__block__menu">
                     <ul>
-                        <li><a href="#">Серьги</a></li>
-                        <li><a href="#">Кольца</a></li>
-                        <li><a href="#">Подвески</a></li>
-                        <li><a href="#">Цепи и браслеты</a></li>
-                        <li><a href="#">Посуда и сувениры</a></li>
+                        <li><a href="@@pages.catalog_categories">Серьги</a></li>
+                        <li><a href="@@pages.catalog_categories">Кольца</a></li>
+                        <li><a href="@@pages.catalog_categories">Подвески</a></li>
+                        <li><a href="@@pages.catalog_categories">Цепи и браслеты</a></li>
+                        <li><a href="@@pages.catalog_categories">Посуда и сувениры</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="footer__top__block">
+            <div class="footer__top__block is--mh">
                 <div class="footer__top__block__title">Компания</div>
                 <nav class="footer__top__block__menu">
                     <ul>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="@@pages.about">О нас</a></li>
+                        <li><a href="@@pages.delivery">Оплата и доставка</a></li>
                         <li><a href="#">Акции и скидки</a></li>
-                        <li><a href="#">Гарантиии</a></li>
-                        <li><a href="#">Условия возврата</a></li>
+                        <li><a href="@@pages.guarantees">Гарантиии</a></li>
+                        <li><a href="@@pages.return">Условия возврата</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,21 +32,30 @@
                     <ul>
                         <li><a href="#">+7 888 555 35 35</a></li>
                         <li><a href="#">+7(467) 564 445</a></li>
-                        <li><a href="#">sharga@mail.ru</a></li>
-                        <li><a href="#">г. Орел, ул. Раздольная,5</a></li>
+                        <li><a href="mailto:sharga@mail.ru">sharga@mail.ru</a></li>
+                        <li>г. Орел, ул. Раздольная,5</li>
                     </ul>
                 </nav>
             </div>
-            <div class="footer__top__block is--email">
-                <div class="footer__top__block__title">Контакты</div>
-                <nav class="footer__top__block__menu">
+            <div class="footer__top__block is--email is--mh">
+                <div class="footer__top__block__title">Подписаться на рассылку</div>
+                <form action="#">
+                    <div class="footer__top__block__input">
+                        <input type="email" placeholder="E-mail">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="footer__top__block is--socials">
+                <div class="footer__top__block__title">Новинки и новости</div>
+                <div class="footer__top__block__socials">
                     <ul>
-                        <li><a href="#">+7 888 555 35 35</a></li>
-                        <li><a href="#">+7(467) 564 445</a></li>
-                        <li><a href="#">sharga@mail.ru</a></li>
-                        <li><a href="#">г. Орел, ул. Раздольная,5</a></li>
+                        <li><a href="@@social.vk">@@include('../items/svg.html', {"name": "vk"})</a></li>
+                        <li><a href="@@social.ok">@@include('../items/svg.html', {"name": "ok"})</a></li>
+                        <li><a href="@@social.facebook">@@include('../items/svg.html', {"name": "facebook"})</a></li>
+                        <li><a href="@@social.instagram">@@include('../items/svg.html', {"name": "instagram"})</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </div>
     </div>

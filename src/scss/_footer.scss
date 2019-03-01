@@ -7,6 +7,7 @@
             @extend .container;
             display: flex;
             align-items: flex-start;
+            flex-wrap: wrap;
             justify-content: space-between;
         }
         &__block {
@@ -25,15 +26,75 @@
                     padding: 0;
                     list-style-type: none;
                     li {
+                        line-height: 28px;
+                        font-size: 14px;
+                        color: #7C7B7B;
                         a {
-                            line-height: 28px;
-                            font-size: 14px;
                             color: #7C7B7B;
                             text-decoration: none;
                             transition: .25s all ease;
                             display: block;
                             &:hover {
                                 color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+            &.is--email {
+                max-width: 357px;
+                width: 100%;
+            }
+            &__input {
+                width: 100%;
+                position: relative;
+                input {
+                    &[type="email"] {
+                        display: block;
+                        width: 100%;
+                        outline: none;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid #978683;
+                        font-size: 12px;
+                        color: #000;
+                        padding: 10px 0;
+                        &::placeholder {
+                            color: #A8A8A8;
+                        }
+                    }
+                    &[type="submit"] {
+                        background: url(../../img/svg/link.svg);
+                        color: transparent;
+                        border: none;
+                        outline: none;
+                        width: 31px;
+                        height: 4px;
+                        top: 50%;
+                        padding: 0;
+                        right: 0;
+                        position: absolute;
+                    }
+                }
+            }
+            &__socials {
+                ul {
+                    margin: 0 -5px;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    justify-content: flex-end;
+                    li {
+                        padding: 0 5px;
+                        a {
+                            svg {
+                                fill: #E3DCD5;
+                                transition: .25s all ease;
+                            }
+                            &:hover {
+                                svg {
+                                    fill: #CD174E;
+                                }
                             }
                         }
                     }
@@ -107,6 +168,76 @@
                             fill: #000;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        &__top {
+            &__block {
+                &.is--email {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .footer {
+        &__top {
+            &__inner {
+                flex-wrap: wrap;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            &__block {
+                width: 100%;
+                &.is--mh {
+                    display: none;
+                }
+                &.is--socials {
+                    padding-top: 15px;
+                    .footer {
+                        &__top {
+                            &__block {
+                                &__title {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    ul {
+                        justify-content: flex-start;
+                        li {
+                            padding: 0 3px;
+                        }
+                    }
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            &__inner {
+
+            }
+            &__wrap {
+                padding: 20px 0;
+                height: auto;
+                justify-content: space-between;
+            }
+            &__menu {
+                display: none;
+            }
+            &__dorohov {
+                &--text {
+                    display: none;
                 }
             }
         }

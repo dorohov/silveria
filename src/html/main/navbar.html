@@ -2,18 +2,10 @@
     <div class="navbar">
         <div class="navbar__top">
             <div class="navbar__top__inner">
-                <div class="navbar__top__icons is--left">
-                    <ul>
-                        <li class="__search-btn is--search">
-                            <a href="javascript:void(0)" role="button">
-                                @@include('../items/svg.html', {"name": "search"})
-                            </a>
-                        </li>
-                        <li class="is--heart">
-                            <a href="#">
-                                @@include('../items/svg.html', {"name": "heart"})
-                            </a>
-                        </li>
+                <div class="navbar__top__left">
+                    <ul class="navbar__top__icons">
+                        <li><a href="javascript:void(0)" id="search_btn">@@include('../items/svg.html', {"name": "search"})</a></li>
+                        <li><a href="@@pages.favorites">@@include('../items/svg.html', {"name": "heart"})</a></li>
                     </ul>
                 </div>
                 <div class="navbar__top__logo">
@@ -21,108 +13,85 @@
                         @@include('../items/svg.html', {"name": "logo"})
                     </a>
                 </div>
-                <div class="navbar__top__icons is--right">
-                    <ul>
-                        <li class="is--user">
-                            <a href="#">
-                                @@include('../items/svg.html', {"name": "user"})
-                            </a>
-                        </li>
-                        <li class="is--pack">
-                            <a href="#">
-                                <div class="is--num">1</div>
-                                @@include('../items/svg.html', {"name": "pack"})
-                            </a>
-                        </li>
+                <div class="navbar__top__right">
+                    <ul class="navbar__top__icons">
+                        <li><a href="@@pages.personal_data">@@include('../items/svg.html', {"name": "user"})</a></li>
+                        <li><a href="@@pages.basket">@@include('../items/svg.html', {"name": "pack"})</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="navbar__menu">
             <nav class="navbar__menu__inner">
-                <ul class="is--lvl1">
-                    <li class="is--lvl1 is--dropdown">
-                        <a href="#" class="is--lvl1">Ювелирные изделия</a>
-                        <div class="dropdown">
-                            <div class="dropdown__inner">
-                                <ul>
-                                    <li><a href="#">Кольца</a></li>
-                                    <li><a href="#">Серьги</a></li>
-                                    <li><a href="#">Подвески</a></li>
-                                    <li><a href="#">Браслеты</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">Новинки</a></li>
-                                    <li><a href="#">Посуда и сувениры</a></li>
-                                    <li><a href="#">Специальные предложения</a></li>
-                                    <li><a href="#">Прочее</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="is--lvl1 is--dropdown">
-                        <a href="#" class="is--lvl1">Новинки</a>
-                        <div class="dropdown">
-                            <div class="dropdown__inner">
-                                <ul>
-                                    <li><a href="#">Кольца2</a></li>
-                                    <li><a href="#">Серьги2</a></li>
-                                    <li><a href="#">Подвески2</a></li>
-                                    <li><a href="#">Браслеты2</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">Новинки2</a></li>
-                                    <li><a href="#">Посуда и сувениры2</a></li>
-                                    <li><a href="#">Специальные предложения2</a></li>
-                                    <li><a href="#">Прочее2</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="is--lvl1">
-                        <a href="#" class="is--lvl1">Посуда и сувениры</a>
-                    </li>
-                    <li class="is--lvl1">
-                        <a href="#" class="is--lvl1">Подарки</a>
-                    </li>
-                    <li class="is--lvl1">
-                        <a href="#" class="is--lvl1">Изделия на заказ</a>
-                    </li>
-                    <li class="is--lvl1">
-                        <a href="#" class="is--lvl1">Информация для клиентов</a>
-                    </li>
-                    <li class="is--lvl1">
-                        <a href="#" class="is--lvl1">Мир Silveria</a>
-                    </li>
+                <ul>
+                    <li class="dropdown__target" data-dropdownid="1"><a href="@@pages.catalog_categories">Ювелирные изделия</a></li>
+                    <li class="dropdown__target" data-dropdownid="2"><a href="@@pages.catalog_categories">Новинки</a></li>
+                    <li><a href="@@pages.catalog_categories">Посуда и сувениры</a></li>
+                    <li><a href="@@pages.catalog_categories">Подарки</a></li>
+                    <li><a href="#">Изделия на заказ</a></li>
+                    <li><a href="#">Информация для клиентов</a></li>
+                    <li><a href="@@pages.silveria">Мир Silveria</a></li>
                 </ul>
             </nav>
-            <div class="navbar__menu__btn">
-                <button class="hamburger hamburger--collapse" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
+        </div>
+        <div class="navbar__mobile">
+            <div class="navbar__mobile__inner">
+                <div class="navbar__mobile__logo">
+                    <a href="@@pages.index">
+                        @@include('../items/svg.html', {"name": "logo"})
+                    </a>
+                </div>
+                <div class="navbar__mobile__btn">
+                    <button id="openMobileMenu"><span></span></button>
+                </div>
             </div>
+        </div>
+        <div class="navbar__mobile__container">
+            
+        </div>
+        <div class="navbar__dropdown" data-dropdownid="1">
+            <nav class="navbar__dropdown__inner">
+                <ul>
+                    <li><a href="@@pages.catalog_categories">Ювелирные изделия</a></li>
+                    <li><a href="@@pages.catalog_categories">Новинки</a></li>
+                    <li><a href="@@pages.catalog_categories">Посуда и сувениры</a></li>
+                    <li><a href="@@pages.catalog_categories">Подарки</a></li>
+                    <li><a href="@@pages.catalog_categories">Изделия на заказ</a></li>
+                    <li><a href="@@pages.catalog_categories">Информация для клиентов</a></li>
+                    <li><a href="@@pages.catalog_categories">Мир Silveria</a></li>
+                </ul>
+                <ul>
+                    <li><a href="@@pages.catalog_categories">Ювелирные изделия</a></li>
+                    <li><a href="@@pages.catalog_categories">Новинки</a></li>
+                    <li><a href="@@pages.catalog_categories">Посуда и сувениры</a></li>
+                    <li><a href="@@pages.catalog_categories">Подарки</a></li>
+                    <li><a href="@@pages.catalog_categories">Изделия на заказ</a></li>
+                    <li><a href="@@pages.catalog_categories">Информация для клиентов</a></li>
+                    <li><a href="@@pages.catalog_categories">Мир Silveria</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar__dropdown" data-dropdownid="2">
+            <nav class="navbar__dropdown__inner">
+                <ul>
+                    <li><a href="@@pages.catalog_categories">Ювелирные изделия</a></li>
+                    <li><a href="@@pages.catalog_categories">Новинки</a></li>
+                    <li><a href="@@pages.catalog_categories">Посуда и сувениры</a></li>
+                    <li><a href="@@pages.catalog_categories">Подарки</a></li>
+                    <li><a href="@@pages.catalog_categories">Изделия на заказ</a></li>
+                    <li><a href="@@pages.catalog_categories">Информация для клиентов</a></li>
+                    <li><a href="@@pages.catalog_categories">Мир Silveria</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="navbar__search">
             <div class="navbar__search__inner">
                 <form action="#">
-                    <div class="navbar__search__box">
-                        <input type="submit">
-                        <input type="text" id="search" name="search" placeholder="Поиск по каталогу">
-                    </div>
+                    <input type="text" placeholder="Поиск по каталогу">
+                    <button type="submit">
+                        @@include('../items/svg.html', {"name": "search_input"})
+                    </button>
                 </form>
-                <div class="navbar__menu__mobile">
-                    <ul>
-                        <li><a href="#">Ювелирные изделия</a></li>
-                        <li><a href="#">Новинки</a></li>
-                        <li><a href="#">Посуда и сувениры</a></li>
-                        <li><a href="#">Подарки</a></li>
-                        <li><a href="#">Изделия на заказ</a></li>
-                        <li><a href="#">Информация для клиентов</a></li>
-                        <li><a href="#">Мир Silveria</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>

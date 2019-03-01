@@ -87,6 +87,22 @@
         "instagram": "#"
     },
     "pages": {
-        "index": "index.html"
+        "index": "index.html",
+        "catalog_production": "catalog_production.html",
+        "catalog_categories": "catalog_categories.html",
+        "item": "item.html",
+        "personal_data": "personal_data.html",
+        "basket": "basket.html",
+        "error404": "404.html",
+        "my_order": "my_order.html",
+        "favorites": "favorites.html",
+        "favorites_empty": "favorites_empty.html",
+        "promocode": "promocode.html",
+        "delivery": "delivery.html",
+        "about": "about.html",
+        "guarantees": "guarantees.html",
+        "return": "return.html",
+        "silveria": "silveria.html",
+        "article": "article.html"
     }
 }

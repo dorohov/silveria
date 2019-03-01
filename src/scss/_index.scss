@@ -4,7 +4,7 @@
         &__inner {
             @extend .container;
             ul {
-                margin: 0 -15px;
+                margin: 0;
                 padding: 0;
                 list-style: none;
                 display: flex;
@@ -12,6 +12,7 @@
                     width: 100%;
                     a {
                         text-decoration: none;
+                        display: block;
                     }
                 }
             }
@@ -141,6 +142,109 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .in {
+        &-categories {
+            &__inner {
+                ul {
+                    margin: 0;
+                    flex-wrap: wrap;
+                    li {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .in {
+        &-collections {
+            &__inner {
+                ul {
+                    flex-wrap: wrap;
+                    li {
+                        width: 100% !important;
+                        a {
+                            padding: 20px !important;
+                        }
+                        &.is--two,
+                        &.is--three {
+                            .in-collections {
+                                &__block {
+                                    &__img {
+                                        img {
+                                            height: 200px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &__block {
+                flex-wrap: wrap;
+                &__img {
+                    padding: 30px 0;
+                    img {
+                        max-width: 200px;
+                        height: auto;
+                    }
+                }
+                &__text {
+                    position: static;
+                    width: 100%;
+                    &__title {
+                        font-size: 16px;
+                        margin-bottom: 0;
+                    }
+                    &__text {
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .ring {
+        padding-left: 15px;
+        padding-right: 15px;
+        &__content {
+            &__title {
+                font-size: 28px;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 18px;
+
+            }
+        }
+    }
+    .in {
+        &-categories {
+            margin-bottom: 50px;
+            &__inner {
+                ul {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &-collections {
+            margin-bottom: 40px;
         }
     }
 }

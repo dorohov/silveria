@@ -3,6 +3,18 @@ body {
     font-family: 'Circe';
     font-weight: normal;
     font-style: normal;
+    &.is--menu-open {
+        overflow: hidden;
+        .navbar__mobile__container {
+            transform: none;
+        }
+        .navbar__search {
+            position: relative;
+            z-index: 999999999;
+            transform: none;
+            display: block;
+        }
+    }
 }
 
 ul {
@@ -22,4 +34,12 @@ img {
 
 svg {
     vertical-align: top;
+}
+
+.__animate {
+    opacity: 0;
+    animation-duration: 1.5s;
+    &.go {
+        opacity: 1;
+    }
 }

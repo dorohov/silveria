@@ -10,3 +10,9 @@
     padding-top: 30px;
     padding-bottom: 110px;
 }
+
+@media (max-width: $resp768) {
+    .page {
+        padding-bottom: 50px;
+    }
+}

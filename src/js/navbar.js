@@ -21,7 +21,7 @@
         });
 
         function createPadding() {
-            $('body').css('padding-top', $('header').innerHeight())
+            $('main').css('padding-top', $('header').innerHeight())
         }
 
         function fixedBar(scrollTop, direction) {
@@ -88,6 +88,7 @@
 
         $('#openMobileMenu').on('click', function() {
             $(this).toggleClass('is--active')
+            $('body').toggleClass('is--menu-open')
         })
 
     })

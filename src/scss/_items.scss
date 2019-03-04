@@ -163,7 +163,41 @@ $category-block-border: #978683;
     }
 }
 
+.breadcrumbs {
+    ul {
+        display: flex;
+        li {
+            line-height: 22px;
+            font-size: 14px;
+            a {
+                text-decoration: none;
+                color: #6F6F6F;
+                display: block;        
+                padding-right: 20px;
+                position: relative;
+                &::after {
+                    content: url(../../img/svg/br_arr.svg);
+                    position: absolute;
+                    right: 7px;
+                    top: 0;
+                }
+            }
+            span {
+                color: #373737;
+            }
+        }
+    }
+}
+
 @media (max-width: $resp768) {
+    .heading {
+        font-size: 20px;
+        line-height: 20px;
+        &.is--center {
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+    }
     .category-block {
         &__img {
             margin-bottom: 20px;

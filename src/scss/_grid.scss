@@ -1,6 +1,6 @@
 .container {
-    max-width: 1560px;
-    padding: 0 15px;
+    max-width: 1590px;
+    padding: 0 30px;
     width: 100%;
     margin: 0 auto;
 }
@@ -14,5 +14,10 @@
 @media (max-width: $resp768) {
     .page {
         padding-bottom: 50px;
+    }
+    .container {
+        max-width: 1560px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

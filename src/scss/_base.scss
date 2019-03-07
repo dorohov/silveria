@@ -34,12 +34,12 @@ ul {
 }
 
 img {
-    vertical-align: top;
     width: 100%;
 }
 
-svg {
-    vertical-align: top;
+svg,
+img {
+    vertical-align: middle;
 }
 
 .__animate {

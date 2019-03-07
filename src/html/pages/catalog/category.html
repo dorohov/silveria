@@ -273,14 +273,19 @@
                 </div>
             </div>
             <div class="catalog__category__list">
-                @@for (var i = 0; i < products.length; i++) {
-                    @@include('../../items/card.html', {
-                        "name": "`+products[i].name+`",
-                        "price": "`+products[i].price+`",
-                        "img": "`+products[i].img+`",
-                        "type": "`+i+`"
-                    })
-                }
+                <div class="catalog__category__list__inner">
+                    @@for (var i = 0; i < products.length; i++) {
+                        @@include('../../items/card.html', {
+                            "name": "`+products[i].name+`",
+                            "price": "`+products[i].price+`",
+                            "img": "`+products[i].img+`",
+                            "type": "`+i+`"
+                        })
+                    }
+                </div>
+                <div class="catalog__category__list__pagination">
+                    @@include('../../items/pagination.html')
+                </div>
             </div>
         </div>
     </div>

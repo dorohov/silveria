@@ -1,0 +1,166 @@
+<div class="page item">
+    <div class="item__breadcrumbs">
+        @@include('../../items/breadcrumbs.html', {
+            "items": [
+                {
+                    "title": "Главная",
+                    "url": "@@pages.index"
+                },
+                {
+                    "title": "Ювелирные изделия",
+                    "url": "@@pages.catalog_production"
+                },
+                {
+                    "title": "Кольца",
+                    "url": "@@pages.catalog_production"
+                }
+            ],
+            "current": "Кольцо классическое из серебра c фианитами"
+        })
+    </div>
+    <div class="item__container">
+        <div class="item__container__inner">
+            <div class="item__container__left">
+                <div class="item__container__price">
+                    <div class="item__container__heading">Цена</div>
+                    <div class="item__container__price__n">124 040 <span>&#8381;</span></div>
+                </div>
+                <div class="item__container__sizes">
+                    <div class="item__container__heading">Размер</div>
+                    <div class="item__container__sizes__form">
+                        <div class="item__container__sizes__form__radio">
+                            <form action="">
+                                <div class="item__container__sizes__form__inp">
+                                    <input type="radio" id="s15" name="size">
+                                    <label for="s15"><span>15</span></label>
+                                </div>
+                                <div class="item__container__sizes__form__inp">
+                                    <input type="radio" id="s155" name="size" checked>
+                                    <label for="s155"><span>15,5</span></label>
+                                </div>
+                                <div class="item__container__sizes__form__inp">
+                                    <input type="radio" id="s16" name="size">
+                                    <label for="s16"><span>16</span></label>
+                                </div>
+                                <div class="item__container__sizes__form__inp">
+                                    <input type="radio" id="s165" name="size">
+                                    <label for="s165"><span>16,5</span></label>
+                                </div>
+                                <div class="item__container__sizes__form__inp">
+                                    <input type="radio" id="s17" name="size">
+                                    <label for="s17"><span>17</span></label>
+                                </div>
+                                <div class="item__container__sizes__form__inp">
+                                    <input type="radio" id="s175" name="size">
+                                    <label for="s175"><span>17,5</span></label>
+                                </div>
+                                <div class="item__container__sizes__form__inp">
+                                    <input type="radio" id="s18" name="size">
+                                    <label for="s18"><span>18</span></label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="item__container__sizes__form__links">
+                            <a href="javascript:void(0)">Как узнать размер?</a>
+                            <a href="javascript:void(0)">Нет нужного размера?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__container__btns is--container">
+                    <div class="item__container__btns is--add-basket">
+                        <a href="javascript:void(0)">
+                            <span class="is--icon">
+                                <img src="img/svg/link.svg" alt="">
+                            </span>
+                            <span class="is--text">Добавить в корзину</span>
+                        </a>
+                    </div>
+                    <div class="item__container__btns is--favorite">
+                        <a href="javascript:void(0)">
+                            <span class="is--icon is--notactive">
+                                @@include('../../items/svg.html', {"name": "heart"})
+                            </span>
+                            <span class="is--icon is--active">
+                                @@include('../../items/svg.html', {"name": "heart_fill"})
+                            </span>
+                            <span class="is--text">Сохранить</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item__container__center">
+                <div class="item__container__center__inner">
+                    <div class="item__container__img">
+                        <div class="item__container__img__inner zoom">
+                            <img src="img/item.png" class="zoom-img" alt="">
+                        </div>
+                    </div>
+                    <div class="item__container__name">Кольцо классическое из золота c бриллиантами и топазами</div>
+                    <div class="item__container__collection">Коллекция <a href="@@pages.catalog_categories" target="_blank">Gorgeous</a></div>
+                    <div class="item__container__art">1766103932</div>
+                </div>
+            </div>
+            <div class="item__container__right">
+                <div class="item__container__heading">Об украшении</div>
+                <div class="item__container__list">
+                    <dl>
+                        <dt><span>Металл</span></dt>
+                        <dd>Золото</dd>
+                    </dl>
+                    <dl>
+                        <dt><span>Цвет</span></dt>
+                        <dd>Белый</dd>
+                    </dl>
+                    <dl>
+                        <dt><span>Проба</span></dt>
+                        <dd>585</dd>
+                    </dl>
+                    <dl>
+                        <dt><span>Покрытие</span></dt>
+                        <dd>Родирование</dd>
+                    </dl>
+                    <dl>
+                        <dt><span>Вставка</span></dt>
+                        <dd>
+                            Топаз
+                            <div class="popup">
+                                <button></button>
+                                <div class="popup__container">
+                                    <div class="popup__container__inner">
+                                        <ul>
+                                            <li>Фианит Кр 1.25 -5шт.0.075кар.;</li>
+                                            <li>Фианит Мр 2.0*4.0 -4шт.</li>
+                                            <li>0.480кар.;Фианит Кр 1.5 -4шт.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><span>Средний вес</span></dt>
+                        <dd>6.65</dd>
+                    </dl>
+                    <dl>
+                        <dt><span>Камень</span></dt>
+                        <dd>Бриллиант</dd>
+                    </dl>
+                    <dl>
+                        <dt><span>Каратный вес вставки</span></dt>
+                        <dd>5</dd>
+                    </dl>
+                    <dl>
+                        <dt><span>Гарантия</span></dt>
+                        <dd>Бессрочная</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item__recent">
+        @@include('../../items/cards4.html', {
+            "title": true,
+            "title_text": "Недавно просмотренные"
+        })
+    </div>
+</div>

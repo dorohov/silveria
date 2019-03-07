@@ -1,0 +1,15 @@
+<div class="cardsf">
+    @@if(title) {
+        <div class="cardsf__title">@@title_text</div>
+    }
+    <div class="cardsf__container">
+        @@for(var i = 0; i < 4; i++) {
+            @@include('card.html', {
+                "name": "`+products[i].name+`",
+                "price": "`+products[i].price+`",
+                "img": "`+products[i].img+`",
+                "type": "`+i+`"
+            })
+        }
+    </div>
+</div>

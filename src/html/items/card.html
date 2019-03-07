@@ -5,7 +5,16 @@
                 <a href="@@pages.item" class="card__img__pic">
                     <img src="img/@@img" alt="">
                 </a>
-                <div class="card__img__btn"></div>
+                <div class="card__img__favorite">
+                    <a href="javascript:void(0)" class="favorite_btn">
+                        <span class="is--notactive">
+                            @@include('svg.html', {"name": "heart"})
+                        </span>
+                        <span class="is--active">
+                            @@include('svg.html', {"name": "heart_fill"})
+                        </span>
+                    </a>
+                </div>
                 <div class="card__img__price">@@price &#8381;</div>
             </div>
             <div class="card__info">

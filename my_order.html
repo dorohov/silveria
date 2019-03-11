@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Личный кабинет - SILVERIA</title>
+    <title>Мои заказы - SILVERIA</title>
     <link rel="stylesheet" href="dist/css/style.css">
     <div class="box"></div>
 </head>
@@ -156,13 +156,13 @@
 
                         <li><a href="index.html">Главная</a></li>
 
-                        <li><span>Личный кабинет</span></li>
+                        <li><span>Мои заказы</span></li>
                     </ul>
                 </div>
             </div>
             <div class="user__heading">
                 <h1 class="heading is--left">
-                    Личный кабинет
+                    Мои заказы
 
                     <a href="index.html">Выйти из системы</a>
 
@@ -183,7 +183,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="personal_data.html" class="user__menu__block is--active">
+                        <a href="personal_data.html" class="user__menu__block ">
                             <div class="user__menu__block__icon">
                                 <span>
                                     <svg class="svg-user-dims svg is--user">
@@ -195,7 +195,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="my_order.html" class="user__menu__block ">
+                        <a href="my_order.html" class="user__menu__block is--active">
                             <div class="user__menu__block__icon">
                                 <span>
                                     <svg class="svg-clock-dims svg is--clock">
@@ -232,71 +232,185 @@
                     </li>
                 </ul>
             </div>
-            <div class="user__forms">
-                <form action="">
-                    <div class="user__forms__block">
-                        <div class="user__forms__block__heading">Обо мне</div>
-                        <div class="user__forms__block__inputs">
-                            <div class="user__forms__group form__group">
-                                <input type="text" placeholder="Имя" value="Маргарита">
-                            </div>
-                            <div class="user__forms__group form__group">
-                                <input type="text" placeholder="Фамилия">
-                            </div>
-                            <div class="user__forms__group form__group">
-                                <input type="email" placeholder="E-mail">
-                            </div>
-                            <div class="user__forms__group form__group">
-                                <input type="text" placeholder="Телефон">
-                            </div>
-                            <div class="user__forms__group form__group">
-                                <input type="text" placeholder="День рождения">
-                            </div>
-                        </div>
+            <div class="user__orders">
+                <div class="user__orders__table">
+                    <div class="user__orders__table__head">
+                        <div class="user__orders__table__block">№ Заказа</div>
+                        <div class="user__orders__table__block">Статус заказа</div>
+                        <div class="user__orders__table__block">Дата доставки</div>
+                        <div class="user__orders__table__block">Стоимость</div>
                     </div>
-                    <div class="user__forms__block">
-                        <div class="user__forms__block__heading">Мой пароль</div>
-                        <div class="user__forms__block__inputs">
-                            <div class="user__forms__group pass_tog is--password form__group">
-                                <button type="button" class="is--pass-show is--ic"><svg class="svg-pass_hide-dims svg is--pass_hide">
-                                        <use xlink:href="img/svg/sprites.svg#pass_hide"></use>
-                                    </svg></button>
-                                <button type="button" class="is--pass-hide is--ic"><svg class="svg-pass_show-dims svg is--pass_show">
-                                        <use xlink:href="img/svg/sprites.svg#pass_show"></use>
-                                    </svg></button>
-                                <input type="password" placeholder="Текущий пароль">
-                            </div>
-                            <div class="user__forms__group pass_tog is--password form__group">
-                                <button type="button" class="is--pass-show is--ic"><svg class="svg-pass_hide-dims svg is--pass_hide">
-                                        <use xlink:href="img/svg/sprites.svg#pass_hide"></use>
-                                    </svg></button>
-                                <button type="button" class="is--pass-hide is--ic"><svg class="svg-pass_show-dims svg is--pass_show">
-                                        <use xlink:href="img/svg/sprites.svg#pass_show"></use>
-                                    </svg></button>
-                                <input type="password" placeholder="Новый пароль">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="user__forms__block">
-                        <div class="user__forms__block__heading">Местоположение</div>
-                        <div class="user__forms__block__inputs">
-                            <div class="user__forms__group is--select form__group">
-                                <label for="country"><svg class="svg-dropdown-dims svg is--dropdown">
+                    <div class="user__orders__table__body">
+                        <div class="user__orders__table__line">
+                            <div class="user__orders__table__line__top">
+                                <div class="user__orders__table__block" data-mtxt="№ Заказа">6168040625-1</div>
+                                <div class="user__orders__table__block" data-mtxt="Статус заказа">В обработке</div>
+                                <div class="user__orders__table__block" data-mtxt="Дата доставки">24.12.2018</div>
+                                <div class="user__orders__table__block" data-mtxt="Стоимость">8 990 &#8381;</div>
+                                <div class="user__orders__table__arrow">
+                                    <svg class="svg-dropdown-dims svg is--dropdown">
                                         <use xlink:href="img/svg/sprites.svg#dropdown"></use>
-                                    </svg></label>
-                                <select name="country" id="country">
-                                    <option value="1">Орел</option>
-                                    <option value="1">Москва</option>
-                                    <option value="1">Новгород</option>
-                                    <option value="1">Санкт-Питербург</option>
-                                </select>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="user__orders__table__line__body">
+                                <div class="user__orders__table__line__body__inner">
+                                    <div class="user__orders__table__line__c__head">
+                                        <div class="user__orders__table__line__c__title">Ваш заказ обрабатывается</div>
+                                        <div class="user__orders__table__line__c__desc">В ближайшее время заказ будет передан в службу доставки. Ожидайте сообщение об отправке.</div>
+                                    </div>
+                                    <div class="user__orders__table__line__c__info">
+                                        <div class="user__orders__table__line__c__info__block">
+                                            <span>Адрес доставки:</span> г. Орел, Емлютина,9
+                                        </div>
+                                        <div class="user__orders__table__line__c__info__block">
+                                            <span>Примерный срок:</span> 1-14 д.
+                                        </div>
+                                        <div class="user__orders__table__line__c__info__block">
+                                            <span>Стоимость доставки:</span> Уточняется оператором
+                                        </div>
+                                    </div>
+                                    <div class="user__orders__table__line__i">
+                                        <ul>
+                                            <li>
+                                                <div class="user__orders__table__line__i__block">
+                                                    <div class="user__orders__table__line__i__img">
+                                                        <a href="item.html"><img src="img/item.png" alt=""></a>
+                                                    </div>
+                                                    <div class="user__orders__table__line__i__title">
+                                                        <a href="item.html">Кольцо из золота с фианитами</a>
+                                                    </div>
+                                                    <div class="user__orders__table__line__i__info">
+                                                        <div><span>Артикул: </span> 017146</div>
+                                                        <div><span>Размер: </span> 16</div>
+                                                    </div>
+                                                    <div class="user__orders__table__line__i__price">8 990 &#8381;</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="user__orders__table__line__body__inner__arr">
+                                        <button><svg class="svg-dropdown-dims svg is--dropdown">
+                                                <use xlink:href="img/svg/sprites.svg#dropdown"></use>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user__orders__table__line">
+                            <div class="user__orders__table__line__top">
+                                <div class="user__orders__table__block" data-mtxt="№ Заказа">6168040625-1</div>
+                                <div class="user__orders__table__block" data-mtxt="Статус заказа">В обработке</div>
+                                <div class="user__orders__table__block" data-mtxt="Дата доставки">24.12.2018</div>
+                                <div class="user__orders__table__block" data-mtxt="Стоимость">8 990 &#8381;</div>
+                                <div class="user__orders__table__arrow">
+                                    <svg class="svg-dropdown-dims svg is--dropdown">
+                                        <use xlink:href="img/svg/sprites.svg#dropdown"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="user__orders__table__line__body">
+                                <div class="user__orders__table__line__body__inner">
+                                    <div class="user__orders__table__line__c__head">
+                                        <div class="user__orders__table__line__c__title">Ваш заказ обрабатывается</div>
+                                        <div class="user__orders__table__line__c__desc">В ближайшее время заказ будет передан в службу доставки. Ожидайте сообщение об отправке.</div>
+                                    </div>
+                                    <div class="user__orders__table__line__c__info">
+                                        <div class="user__orders__table__line__c__info__block">
+                                            <span>Адрес доставки:</span> г. Орел, Емлютина,9
+                                        </div>
+                                        <div class="user__orders__table__line__c__info__block">
+                                            <span>Примерный срок:</span> 1-14 д.
+                                        </div>
+                                        <div class="user__orders__table__line__c__info__block">
+                                            <span>Стоимость доставки:</span> Уточняется оператором
+                                        </div>
+                                    </div>
+                                    <div class="user__orders__table__line__i">
+                                        <ul>
+                                            <li>
+                                                <div class="user__orders__table__line__i__block">
+                                                    <div class="user__orders__table__line__i__img">
+                                                        <a href="item.html"><img src="img/item.png" alt=""></a>
+                                                    </div>
+                                                    <div class="user__orders__table__line__i__title">
+                                                        <a href="item.html">Кольцо из золота с фианитами</a>
+                                                    </div>
+                                                    <div class="user__orders__table__line__i__info">
+                                                        <div><span>Артикул: </span> 017146</div>
+                                                        <div><span>Размер: </span> 16</div>
+                                                    </div>
+                                                    <div class="user__orders__table__line__i__price">8 990 &#8381;</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="user__orders__table__line__body__inner__arr">
+                                        <button><svg class="svg-dropdown-dims svg is--dropdown">
+                                                <use xlink:href="img/svg/sprites.svg#dropdown"></use>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user__orders__table__line">
+                            <div class="user__orders__table__line__top">
+                                <div class="user__orders__table__block" data-mtxt="№ Заказа">6168040625-1</div>
+                                <div class="user__orders__table__block" data-mtxt="Статус заказа">В обработке</div>
+                                <div class="user__orders__table__block" data-mtxt="Дата доставки">24.12.2018</div>
+                                <div class="user__orders__table__block" data-mtxt="Стоимость">8 990 &#8381;</div>
+                                <div class="user__orders__table__arrow">
+                                    <svg class="svg-dropdown-dims svg is--dropdown">
+                                        <use xlink:href="img/svg/sprites.svg#dropdown"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="user__orders__table__line__body">
+                                <div class="user__orders__table__line__body__inner">
+                                    <div class="user__orders__table__line__c__head">
+                                        <div class="user__orders__table__line__c__title">Ваш заказ обрабатывается</div>
+                                        <div class="user__orders__table__line__c__desc">В ближайшее время заказ будет передан в службу доставки. Ожидайте сообщение об отправке.</div>
+                                    </div>
+                                    <div class="user__orders__table__line__c__info">
+                                        <div class="user__orders__table__line__c__info__block">
+                                            <span>Адрес доставки:</span> г. Орел, Емлютина,9
+                                        </div>
+                                        <div class="user__orders__table__line__c__info__block">
+                                            <span>Примерный срок:</span> 1-14 д.
+                                        </div>
+                                        <div class="user__orders__table__line__c__info__block">
+                                            <span>Стоимость доставки:</span> Уточняется оператором
+                                        </div>
+                                    </div>
+                                    <div class="user__orders__table__line__i">
+                                        <ul>
+                                            <li>
+                                                <div class="user__orders__table__line__i__block">
+                                                    <div class="user__orders__table__line__i__img">
+                                                        <a href="item.html"><img src="img/item.png" alt=""></a>
+                                                    </div>
+                                                    <div class="user__orders__table__line__i__title">
+                                                        <a href="item.html">Кольцо из золота с фианитами</a>
+                                                    </div>
+                                                    <div class="user__orders__table__line__i__info">
+                                                        <div><span>Артикул: </span> 017146</div>
+                                                        <div><span>Размер: </span> 16</div>
+                                                    </div>
+                                                    <div class="user__orders__table__line__i__price">8 990 &#8381;</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="user__orders__table__line__body__inner__arr">
+                                        <button><svg class="svg-dropdown-dims svg is--dropdown">
+                                                <use xlink:href="img/svg/sprites.svg#dropdown"></use>
+                                            </svg></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="user__forms__block__submit">
-                        <input type="submit" value="Сохранить данные" class="btn">
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </main>

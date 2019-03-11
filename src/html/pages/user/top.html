@@ -1,0 +1,73 @@
+<div class="user__breadcrumbs">
+    @@include('../../items/breadcrumbs.html', {
+        "items": [
+            {
+                "title": "Главная",
+                "url": "@@pages.index"
+            }
+        ],
+        "current": "@@title"
+    })
+</div>
+<div class="user__heading">
+    @@include('../../items/heading.html', {
+        "title": "@@title",
+        "align": "left",
+        "right": true,
+        "right_text": "logout"
+    })
+</div>
+<div class="user__menu">
+    <ul>
+        <li>
+            <div class="user__menu__block is--first">
+                <div class="user__menu__block__icon">
+                    <span>
+                        @@include('../../items/svg.html', {"name": "user"})
+                    </span>
+                </div>
+                <div class="user__menu__block__text">Маргарита</div>
+            </div>
+        </li>
+        <li>
+            <a href="@@pages.personal_data" class="user__menu__block @@if(title == 'Личный кабинет') {is--active}">
+                <div class="user__menu__block__icon">
+                    <span>
+                        @@include('../../items/svg.html', {"name": "user"})
+                    </span>
+                </div>
+                <div class="user__menu__block__text">Личные данные</div>
+            </a>
+        </li>
+        <li>
+            <a href="@@pages.my_order" class="user__menu__block @@if(title == 'Мои заказы') {is--active}">
+                <div class="user__menu__block__icon">
+                    <span>
+                        @@include('../../items/svg.html', {"name": "clock"})
+                    </span>
+                </div>
+                <div class="user__menu__block__text">Мои заказы</div>
+            </a>
+        </li>
+        <li>
+            <a href="@@pages.favorites" class="user__menu__block @@if(title == 'Избранное') {is--active}">
+                <div class="user__menu__block__icon">
+                    <span>
+                        @@include('../../items/svg.html', {"name": "heart"})
+                    </span>
+                </div>
+                <div class="user__menu__block__text">Избранное</div>
+            </a>
+        </li>
+        <li>
+            <a href="@@pages.promocode" class="user__menu__block @@if(title == 'Промокоды') {is--active}">
+                <div class="user__menu__block__icon">
+                    <span>
+                        @@include('../../items/svg.html', {"name": "card"})
+                    </span>
+                </div>
+                <div class="user__menu__block__text">Промокоды</div>
+            </a>
+        </li>
+    </ul>
+</div>

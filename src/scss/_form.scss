@@ -1,0 +1,97 @@
+.form {
+    &__group {
+        margin-bottom: 15px;
+        position: relative;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            display: block;
+            width: 100%;
+            padding: 25px 35px;
+            border: none;
+            outline: none;
+            font-weight: 300;
+            font-size: 18px;
+            color: #7C7B7B;
+            border: 1px solid transparent;
+            transition: .25s all ease;
+            &::placeholder {
+                color: #7C7B7B;
+                transition: .25s all ease;
+            }
+            &:focus {
+                border-color:rgba(#978683, .5);
+                color: #373737;
+                &::placeholder {
+                    color: #373737;
+                }
+            }
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+        label,
+        button.is--ic {
+            position: absolute;
+            right: 25px;
+            height: 20px;
+            width: 20px;
+            border: none;
+            padding: 0;
+            background: transparent;
+            cursor: pointer;
+            outline: none;
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #979797;
+            }
+            top: 50%;
+            margin-top: -8px;
+        }
+        button.is--ic {
+            &.is--pass-hide {
+                display: none;
+            }
+        }
+        label {
+            width: 15px;
+            height: 15px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__inner {
+            display: flex;
+        }
+        &.is--select {
+            background: #fff;
+            label {
+                z-index: 9;
+            }
+            select {
+                background: transparent;
+                position: relative;
+                z-index: 10;
+            }
+        }
+        &.is--promo {
+            input[type="text"] {
+                margin-right: 15px;
+            }
+        }
+        .is--heading {
+            width: 100%;
+            line-height: 24px;
+            font-size: 24px; 
+            color: #454545;
+            font-weight: 300;
+            margin-bottom: 35px;
+        }
+    }
+}

@@ -64,6 +64,7 @@ header {
                         color: #000;
                         font-size: 16px;
                         transition: .25s all ease;
+                        white-space: nowrap;
                     }
                     &.is--active,
                     &:hover {

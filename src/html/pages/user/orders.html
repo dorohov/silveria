@@ -1,0 +1,20 @@
+<div class="page user">
+    @@include('top.html', {
+        "title": "Мои заказы"
+    })
+    <div class="user__orders">
+        <div class="user__orders__table">
+            <div class="user__orders__table__head">
+                <div class="user__orders__table__block">№ Заказа</div>
+                <div class="user__orders__table__block">Статус заказа</div>
+                <div class="user__orders__table__block">Дата доставки</div>
+                <div class="user__orders__table__block">Стоимость</div>
+            </div>
+            <div class="user__orders__table__body">
+                @@include('order_line.html')
+                @@include('order_line.html')
+                @@include('order_line.html')
+            </div>
+        </div>
+    </div>
+</div>

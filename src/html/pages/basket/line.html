@@ -1,0 +1,30 @@
+<div class="basket__block">
+    <div class="basket__block__img">
+        <a href="@@pages.item"><img src="img/item.png" alt=""></a>
+    </div>
+    <div class="basket__block__name">
+        <div class="basket__block__name__title"><a href="@@pages.item">Кольцо из золота с фианитами</a></div>
+        <div class="basket__block__name__size">Размер: 16</div>
+    </div>
+    <div class="basket__block__count">
+        <div class="countblock">
+            <button class="is--minus">@@include('../../items/svg.html', {"name": "minus"})</button>
+            <input type="text" min="1" readonly value="2">
+            <button class="is--plus">@@include('../../items/svg.html', {"name": "plus"})</button>
+        </div>
+    </div>
+    <div class="basket__block__price">124 040 &#8381;</div>
+    <div class="basket__block__btns">
+        <button class="is--heart">
+            @@if(favorite) {
+                <span class="is--active">@@include('../../items/svg.html', {"name": "heart_fill"})</span>
+            }
+            @@if(!favorite) {
+                @@include('../../items/svg.html', {"name": "heart"})
+            }
+        </button>
+        <button class="is--dustbin">
+            @@include('../../items/svg.html', {"name": "dustbin"})
+        </button>
+    </div>
+</div>

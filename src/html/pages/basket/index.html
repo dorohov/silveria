@@ -1,0 +1,75 @@
+<div class="page basket">
+    <div class="basket__breadcrumbs">
+        @@include('../../items/breadcrumbs.html', {
+            "items": [
+                {
+                    "title": "Главная",
+                    "url": "@@pages.index"
+                }
+            ],
+            "current": "Корзина"
+        })
+    </div>
+    <div class="basket__heading">
+        @@include('../../items/heading.html', {
+            "title": "Корзина",
+            "align": "left",
+            "right": false,
+            "right_text": "logout"
+        })
+    </div>
+    <div class="basket__delivery">
+        Доставка: 1-14 дней
+    </div>
+    <div class="basket__list">
+        <ul>
+            <li>
+                @@include('line.html', {"favorite": false})
+                @@include('line.html', {"favorite": false})
+                @@include('line.html', {"favorite": true})
+            </li>
+        </ul>
+    </div>
+    <div class="basket__center">
+        <div class="basket__promo">
+            <div class="form__group is--promo">
+                <div class="is--heading">Скидка по промокоду</div>
+                <div class="form__group__inner">
+                    <input type="text" placeholder="Промокод">
+                    <button class="btn">Применить</button>
+                </div>
+            </div>
+        </div>
+        <div class="basket__prices">
+            <ul>
+                <li class="is--summ"><span>Сумма заказа:</span> 124 040 &#8381;</li>
+                <li class="is--delivery"><span>Доставка:</span> 500 &#8381;</li>
+                <li class="is--all"><span>Общий итог:</span> 135 070 &#8381;</li>
+            </ul>
+        </div>
+    </div>
+    <div class="basket__bottom">
+        <div class="user__forms__block">
+            <div class="user__forms__block__heading">Данные покупателя</div>
+            <div class="user__forms__block__inputs">
+                <div class="user__forms__group form__group">
+                    <input type="text" placeholder="Имя" value="Маргарита">      
+                </div>
+                <div class="user__forms__group form__group">
+                    <input type="email" placeholder="E-mail">      
+                </div>
+                <div class="user__forms__group form__group">
+                    <input type="text" placeholder="Телефон">      
+                </div>
+                <div class="user__forms__group form__group">
+                    <input type="submit" class="btn" value="Оформить заказ">   
+                </div>
+                <div class="checklabel">
+                    <input type="checkbox" name="prpo" id="prpo" checked>
+                    <label for="prpo">Нажимая на кнопку «Оформить заказ», вы соглашаетесь 
+                            с <a href="#">Пользовательским соглашением и условиями продажи</a>.</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

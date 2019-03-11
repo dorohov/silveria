@@ -1,3 +1,8 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    
+    .user__forms__block__inputs {
+        label,
+        button {
+            display: none;
+        }
+    }
 }

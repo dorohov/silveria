@@ -8,9 +8,25 @@ $category-block-border: #978683;
     font-family: 'Playfair Display SC';
     font-weight: 400;
     color: #000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     &.is--center {
         padding: 50px 0;
         text-align: center;
+        justify-content: center;
+    }
+    a {
+        color: #373737;
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration: none;
+        font-family: 'Circe';
+        font-weight: 300;
+        transition: .25s all ease;
+        &:hover {
+            color: #000;
+        }
     }
 }
 
@@ -275,6 +291,9 @@ $category-block-border: #978683;
     text-decoration: none;
     background: #E3DCD5;
     transition: .25s all ease;
+    border: none;
+    cursor: pointer;
+    outline: none;
     &:hover {
         background: #D5CDC6;
     }
@@ -368,6 +387,71 @@ $category-block-border: #978683;
     }
 }
 
+.countblock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        display: block;
+        padding: 0;
+        border: 1px solid rgba(#C7C7C7, .5);
+        background: transparent;
+    }
+    button {
+        border: none;
+        background: transparent;
+        padding: 0;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.checklabel {
+    position: relative;
+    padding-left: 20px;
+    input {
+        display: none;
+    }
+    label {
+        line-height: 18px;
+        font-size: 14px;
+        color: #7C7B7B;
+        font-weight: 300;
+        a {
+            font-weight: 400;
+            color: inherit;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 14px;
+            height: 14px;
+            border: 3px solid #ECEBF0;
+            display: block;
+            background: #ECEBF0;
+        }
+    }
+    input {
+        &:checked {
+            & + label {
+                &::before {
+                    background: #978683;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: $resp1200) {
     .breadcrumbs {
         margin-bottom: 15px;
@@ -378,6 +462,14 @@ $category-block-border: #978683;
     .heading {
         font-size: 20px;
         line-height: 20px;
+        flex-wrap: wrap;
+        a {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 16px;
+        }
         &.is--center {
             padding-top: 10px;
             padding-bottom: 30px;
@@ -419,5 +511,11 @@ $category-block-border: #978683;
     }
     .breadcrumbs {
         display: none;
+    }
+    .btn {
+        padding: 15px 30px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 16px;
     }
 }

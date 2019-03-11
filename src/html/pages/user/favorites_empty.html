@@ -1,0 +1,16 @@
+<div class="page user">
+    @@include('top.html', {
+        "title": "Избранное"
+    })
+    <div class="user__favorites">
+        <div class="user__favorites__top">
+            <div class="user__favorites__text">
+                <p>Вы пока ничего не добавили в избранное. Посмотрите украшения илисувенирную продукцию в каталоге Silveria.</p>
+                <a href="@@pages.catalog_production" class="btn">Перейти в каталог</a>
+            </div>
+        </div>
+        <div class="user__favorites__bottom">
+            @@include('../../items/cards4.html', {"title": true, "title_text": "Рекомендуем вам"})
+        </div>
+    </div>
+</div>

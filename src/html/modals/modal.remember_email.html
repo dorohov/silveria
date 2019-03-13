@@ -1,0 +1,20 @@
+<div id="modal_rem_email" class="modal">
+  <div class="modal__head">
+      <div class="modal__head__text">Восстановление пароля</div>
+      <div class="modal__head__desc">Введите e-mail, указанный вами при регистрации, и мы вышлем ссылку для восстановления пароля</div>
+      <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+          @@include('../items/svg.html', {"name": "modal_close"})
+      </a>
+  </div>
+  <form class="modal__body">
+      <div class="modal__form">
+          <input type="email" placeholder="E-mail">
+      </div>
+      <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Отправить</a></div>
+      <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>
+      <div class="modal__text">
+          <p>Не пришло письмо или неверно указали e-mail при регистрации?</p>
+          <a href="#modal_rem_phone" rel="modal:open">Восстановите пароль по телефону</a>
+      </div>
+    </form>
+</div>

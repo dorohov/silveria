@@ -1,0 +1,20 @@
+<div id="modal_login" class="modal">
+  <div class="modal__head">
+      <div class="modal__head__text">Вход</div>
+      <div class="modal__head__desc">Для упрощения входа вы можете связать свой аккаунт в соцсети с личным кабинетом на нашем сайте.</div>
+      <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+          @@include('../items/svg.html', {"name": "modal_close"})
+      </a>
+  </div>
+  <form class="modal__body"  data-parsley-validate>
+      <div class="modal__form">
+          <input type="email" placeholder="Адрес электронной почты" required data-parsley-no-focus>
+          <input type="password" placeholder="Пароль" required data-parsley-no-focus>
+      </div>
+      <input type="submit">
+      <div class="modal__link"><a href="#modal_rem_email" rel="modal:open">Забыли пароль?</a></div>
+      <div class="modal__btn"><a href="@@pages.personal_data" class="btn">Войти</a></div>
+      <div class="modal__link"><a href="#modal_register" rel="modal:open">Регистрация</a></div>
+      @@include('_modal.socials.html')
+    </form>
+</div>

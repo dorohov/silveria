@@ -1,0 +1,20 @@
+<div id="modal_rem_phone" class="modal">
+  <div class="modal__head">
+      <div class="modal__head__text">Восстановление пароля</div>
+      <div class="modal__head__desc">Введите телефон, указанный Вами при регистрации, и мы вышлем код подтверждения</div>
+      <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+          @@include('../items/svg.html', {"name": "modal_close"})
+      </a>
+  </div>
+  <form class="modal__body">
+      <div class="modal__form">
+          <input type="text" placeholder="Телефон" class="in-phone">
+      </div>
+      <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Получить код</a></div>
+      <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>
+      <div class="modal__text">
+          <a href="#modal_rem_phone" rel="modal:open">Восстановите пароль по e-mail</a>
+          <p>Служба поддержки 8 800 1000 750</p>
+      </div>
+    </form>
+</div>

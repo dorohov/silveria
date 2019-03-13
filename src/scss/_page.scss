@@ -407,6 +407,58 @@
     }
 }
 
+.article {
+    &__container {
+        display: flex;
+        img {
+            width: auto;
+        }
+    }
+}
+
+.error404 {
+    padding: 50px 0;
+    &__container {
+        max-width: 1070px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    &__img {
+        max-width: 474px;
+        margin-right: 20%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__content {
+        max-width: 390px;
+        width: auto;
+    }
+    &__heading {
+        font-family: 'Playfair Display SC';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 61px;
+        font-size: 48px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    &__desc {
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 50px;
+    }
+}
+
 @media (max-width: 1390px) {
     .delivery {
         &__top {
@@ -546,6 +598,40 @@
             }
         }
     }
+    .article {
+        &__container {
+            flex-wrap: wrap;
+            flex-flow: wrap;
+            img {
+                max-width: 500px;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+            .info__text {
+                align-items: center;
+            }
+        }
+        &__left {
+            order: 1;
+        }
+        &__right {
+            width: 100%;
+        }
+    }
+    .error404 {
+        &__container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__img {
+            margin-right: 0;
+        }
+        &__content {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: $resp768) {
@@ -649,6 +735,19 @@
                     }
                 }
             }
+        }
+    }
+    .error404 {
+        &__img {
+            max-width: 300px;
+        }
+        &__heading {
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 15px;
+        }
+        &__desc {
+            margin-bottom: 15px;
         }
     }
 }

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Каталог - SILVERIA</title>
+    <link rel="stylesheet" href="dist/css/jquery.modal.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
-    <div class="box"></div>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="navbar__top__right">
                         <ul class="navbar__top__icons">
-                            <li><a href="personal_data.html"><svg class="svg-user-dims svg is--user">
+                            <li><a href="#modal_login" rel="modal:open"><svg class="svg-user-dims svg is--user">
                                         <use xlink:href="img/svg/sprites.svg#user"></use>
                                     </svg></a></li>
                             <li><a href="basket.html"><svg class="svg-pack-dims svg is--pack">
@@ -81,7 +81,7 @@
                             <li><a href="catalog_categories.html">Подарки</a></li>
                             <li><a href="catalog_categories.html">Изделия на заказ</a></li>
                             <li><a href="catalog_categories.html">Информация для клиентов</a></li>
-                            <li><a href="catalog_categories.html">Мир Silveria</a></li>
+                            <li><a href="silveria.html">Мир Silveria</a></li>
                         </ul>
                     </nav>
                     <div class="navbar__mobile__container__icons">
@@ -89,7 +89,7 @@
                             <li><a href="favorites.html"><svg class="svg-heart-dims svg is--heart">
                                         <use xlink:href="img/svg/sprites.svg#heart"></use>
                                     </svg></a></li>
-                            <li><a href="personal_data.html"><svg class="svg-user-dims svg is--user">
+                            <li><a href="#modal_login" rel="modal:open"><svg class="svg-user-dims svg is--user">
                                         <use xlink:href="img/svg/sprites.svg#user"></use>
                                     </svg></a></li>
                             <li><a href="basket.html"><svg class="svg-pack-dims svg is--pack">
@@ -102,35 +102,35 @@
             <div class="navbar__dropdown" data-dropdownid="1">
                 <nav class="navbar__dropdown__inner">
                     <ul>
-                        <li><a href="catalog_categories.html">Ювелирные изделия</a></li>
-                        <li><a href="catalog_categories.html">Новинки</a></li>
-                        <li><a href="catalog_categories.html">Посуда и сувениры</a></li>
-                        <li><a href="catalog_categories.html">Подарки</a></li>
-                        <li><a href="catalog_categories.html">Изделия на заказ</a></li>
-                        <li><a href="catalog_categories.html">Информация для клиентов</a></li>
-                        <li><a href="catalog_categories.html">Мир Silveria</a></li>
+                        <li><a href="catalog_categories.html">Кольца</a></li>
+                        <li><a href="catalog_categories.html">Серьги</a></li>
+                        <li><a href="catalog_categories.html">Подвески</a></li>
+                        <li><a href="catalog_categories.html">Броши</a></li>
+                        <li><a href="catalog_categories.html">Печатки</a></li>
+                        <li><a href="catalog_categories.html">Вставки</a></li>
+                        <li><a href="catalog_categories.html">Помолвочные кольца</a></li>
                     </ul>
                     <ul>
-                        <li><a href="catalog_categories.html">Ювелирные изделия</a></li>
-                        <li><a href="catalog_categories.html">Новинки</a></li>
-                        <li><a href="catalog_categories.html">Посуда и сувениры</a></li>
-                        <li><a href="catalog_categories.html">Подарки</a></li>
-                        <li><a href="catalog_categories.html">Изделия на заказ</a></li>
-                        <li><a href="catalog_categories.html">Информация для клиентов</a></li>
-                        <li><a href="catalog_categories.html">Мир Silveria</a></li>
+                        <li><a href="catalog_categories.html">Trend Book</a></li>
+                        <li><a href="catalog_categories.html">Mystery</a></li>
+                        <li><a href="catalog_categories.html">New Look</a></li>
+                        <li><a href="catalog_categories.html">Just</a></li>
+                        <li><a href="catalog_categories.html">Galaxy</a></li>
+                        <li><a href="catalog_categories.html">Favorite</a></li>
+                        <li><a href="catalog_categories.html">Etude</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="navbar__dropdown" data-dropdownid="2">
                 <nav class="navbar__dropdown__inner">
                     <ul>
-                        <li><a href="catalog_categories.html">Ювелирные изделия</a></li>
-                        <li><a href="catalog_categories.html">Новинки</a></li>
-                        <li><a href="catalog_categories.html">Посуда и сувениры</a></li>
-                        <li><a href="catalog_categories.html">Подарки</a></li>
-                        <li><a href="catalog_categories.html">Изделия на заказ</a></li>
-                        <li><a href="catalog_categories.html">Информация для клиентов</a></li>
-                        <li><a href="catalog_categories.html">Мир Silveria</a></li>
+                        <li><a href="catalog_categories.html">Trend Book</a></li>
+                        <li><a href="catalog_categories.html">Mystery</a></li>
+                        <li><a href="catalog_categories.html">New Look</a></li>
+                        <li><a href="catalog_categories.html">Just</a></li>
+                        <li><a href="catalog_categories.html">Galaxy</a></li>
+                        <li><a href="catalog_categories.html">Favorite</a></li>
+                        <li><a href="catalog_categories.html">Etude</a></li>
                     </ul>
                 </nav>
             </div>
@@ -1114,11 +1114,157 @@
             </div>
         </div>
     </footer>
+    <div id="modal_login" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Вход</div>
+            <div class="modal__head__desc">Для упрощения входа вы можете связать свой аккаунт в соцсети с личным кабинетом на нашем сайте.</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <form class="modal__body" data-parsley-validate>
+            <div class="modal__form">
+                <input type="email" placeholder="Адрес электронной почты" required data-parsley-no-focus>
+                <input type="password" placeholder="Пароль" required data-parsley-no-focus>
+            </div>
+            <input type="submit">
+            <div class="modal__link"><a href="#modal_rem_email" rel="modal:open">Забыли пароль?</a></div>
+            <div class="modal__btn"><a href="personal_data.html" class="btn">Войти</a></div>
+            <div class="modal__link"><a href="#modal_register" rel="modal:open">Регистрация</a></div>
+            <div class="modal__socials">
+                <div class="modal__socials__title">
+                    Вход через социальные сети
+                </div>
+                <div class="modal__socials__list">
+                    <ul>
+                        <li><a href="#"><svg class="svg-vk-dims svg is--vk">
+                                    <use xlink:href="img/svg/sprites.svg#vk"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="svg-ok-dims svg is--ok">
+                                    <use xlink:href="img/svg/sprites.svg#ok"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="svg-facebook-dims svg is--facebook">
+                                    <use xlink:href="img/svg/sprites.svg#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="modal_register" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Регистрация</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="modal__body">
+            <div class="modal__form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон" class="in-phone">
+                <input type="password" placeholder="Пароль (6 символов)">
+                <input type="password" placeholder="Повторите пароль">
+            </div>
+            <div class="modal__btn"><a href="personal_data.html" class="btn">Регистрация</a></div>
+            <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>
+            <div class="modal__socials">
+                <div class="modal__socials__title">
+                    Вход через социальные сети
+                </div>
+                <div class="modal__socials__list">
+                    <ul>
+                        <li><a href="#"><svg class="svg-vk-dims svg is--vk">
+                                    <use xlink:href="img/svg/sprites.svg#vk"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="svg-ok-dims svg is--ok">
+                                    <use xlink:href="img/svg/sprites.svg#ok"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg class="svg-facebook-dims svg is--facebook">
+                                    <use xlink:href="img/svg/sprites.svg#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal_rem_email" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Восстановление пароля</div>
+            <div class="modal__head__desc">Введите e-mail, указанный вами при регистрации, и мы вышлем ссылку для восстановления пароля</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <form class="modal__body">
+            <div class="modal__form">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Отправить</a></div>
+            <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>
+            <div class="modal__text">
+                <p>Не пришло письмо или неверно указали e-mail при регистрации?</p>
+                <a href="#modal_rem_phone" rel="modal:open">Восстановите пароль по телефону</a>
+            </div>
+        </form>
+    </div>
+    <div id="modal_rem_phone" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Восстановление пароля</div>
+            <div class="modal__head__desc">Введите телефон, указанный Вами при регистрации, и мы вышлем код подтверждения</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <form class="modal__body">
+            <div class="modal__form">
+                <input type="text" placeholder="Телефон" class="in-phone">
+            </div>
+            <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Получить код</a></div>
+            <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>
+            <div class="modal__text">
+                <a href="#modal_rem_phone" rel="modal:open">Восстановите пароль по e-mail</a>
+                <p>Служба поддержки 8 800 1000 750</p>
+            </div>
+        </form>
+    </div>
+    <div id="modal_code" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Восстановление пароля</div>
+            <div class="modal__head__desc">Введите код, присланный в SMS, чтобы изменить Email и пароль</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <form class="modal__body">
+            <div class="modal__form">
+                <input type="text" placeholder="Код подтверждения">
+            </div>
+            <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Отправить</a></div>
+            <div class="modal__link"><a href="#modal_rem_phone" rel="modal:open">Ввести другой номер телефона</a></div>
+            <div class="modal__text">
+                <p>Не приходит SMS на телефон?</p>
+                <a href="javascript:void(0)">Выслать повторно</a>
+            </div>
+        </form>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="dist/js/svg4everybody.min.js"></script>
-    <!-- <script src="dist/js/css3-animate-it.js"></script> -->
     <script src="dist/js/jquery.visible.min.js"></script>
     <script src="dist/js/jquery.zoom.min.js"></script>
+    <script src="dist/js/jquery.modal.min.js"></script>
+    <script src="dist/js/imask.js"></script>
+    <script src="dist/js/parsley.min.js"></script>
+    <script src="dist/js/i18n/ru.js"></script>
     <script src="dist/js/main.js"></script>
     <script>
         svg4everybody();

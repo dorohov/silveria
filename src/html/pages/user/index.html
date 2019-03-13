@@ -3,12 +3,12 @@
         "title": "Личный кабинет"
     })
     <div class="user__forms">
-        <form action="">
+        <form action="" data-parsley-validate>
             <div class="user__forms__block">
                 <div class="user__forms__block__heading">Обо мне</div>
                 <div class="user__forms__block__inputs">
                     <div class="user__forms__group form__group">
-                        <input type="text" placeholder="Имя" value="Маргарита">      
+                        <input type="text" placeholder="Имя" value="Маргарита" required data-parsley-no-focus>      
                     </div>
                     <div class="user__forms__group form__group">
                         <input type="text" placeholder="Фамилия">      
@@ -17,7 +17,7 @@
                         <input type="email" placeholder="E-mail">      
                     </div>
                     <div class="user__forms__group form__group">
-                        <input type="text" placeholder="Телефон">      
+                        <input type="text" placeholder="Телефон" class="in-phone" required data-parsley-no-focus>      
                     </div>
                     <div class="user__forms__group form__group">
                         <input type="text" placeholder="День рождения">      

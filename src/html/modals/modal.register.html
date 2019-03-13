@@ -1,0 +1,19 @@
+<div id="modal_register" class="modal">
+  <div class="modal__head">
+      <div class="modal__head__text">Регистрация</div>
+      <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+          @@include('../items/svg.html', {"name": "modal_close"})
+      </a>
+  </div>
+  <div class="modal__body">
+      <div class="modal__form">
+          <input type="text" placeholder="Ваше имя">
+          <input type="text" placeholder="Ваш телефон" class="in-phone">
+          <input type="password" placeholder="Пароль (6 символов)">
+          <input type="password" placeholder="Повторите пароль">
+      </div>
+      <div class="modal__btn"><a href="@@pages.personal_data" class="btn">Регистрация</a></div>
+      <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>
+      @@include('_modal.socials.html')
+  </div>
+</div>

@@ -60,3 +60,9 @@ img {
     top: 0;
     display: none;
 }
+
+@-webkit-keyframes work-slide-pavilion-2 {
+    50% {
+        transform: translateY(-15px)
+    }
+}

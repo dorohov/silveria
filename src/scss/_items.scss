@@ -45,8 +45,10 @@ $category-block-border: #978683;
                 padding: 0 50px;
                 position: relative;
                 z-index: 10;
+                animation: 5s ease-in-out 0s normal none infinite work-slide-pavilion-2;
                 &__canvas {
                     position: relative;
+                    // transition: .25s all ease;
                     canvas {
                         width: 100%;
                         height: auto;

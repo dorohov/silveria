@@ -8,7 +8,7 @@ window.onload = function() {
 
     var img = document.getElementById('bRingImg')
     var frames = document.querySelectorAll('#bRingSlides > img')
-    var alpha = .3,   /// current alpha value
+    var alpha = .5,   /// current alpha value
         delta = 0.02;
 
     canvas.height = 604;
@@ -24,7 +24,7 @@ window.onload = function() {
     function draw() {
         setTimeout(function() {
             alpha += delta;
-            if (alpha <= 0 || alpha >= .5) delta =- delta;
+            if (alpha <= 0 || alpha >= .6) delta =- delta;
             
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.globalAlpha = alpha;

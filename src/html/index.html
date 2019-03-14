@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    @@include('items/pace_loader.html')
     @@include('main/head.html', {"title": "Главная"})
 </head>
 <body>
+        <script src="dist/js/loader.min.js"></script>
     @@include('main/navbar.html')
     <main>
         @@include('pages/index/index.html')

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Гарантии - SILVERIA</title>
-    <link rel="stylesheet" href="dist/css/jquery.modal.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -337,12 +336,15 @@
         </div>
         <form class="modal__body" data-parsley-validate>
             <div class="modal__form">
-                <input type="email" placeholder="Адрес электронной почты" required data-parsley-no-focus>
-                <input type="password" placeholder="Пароль" required data-parsley-no-focus>
+                <div class="modal__form__input">
+                    <input type="email" placeholder="Адрес электронной почты" required data-parsley-no-focus>
+                </div>
+                <div class="modal__form__input">
+                    <input type="password" placeholder="Пароль" required data-parsley-no-focus>
+                </div>
             </div>
-            <input type="submit">
             <div class="modal__link"><a href="#modal_rem_email" rel="modal:open">Забыли пароль?</a></div>
-            <div class="modal__btn"><a href="personal_data.html" class="btn">Войти</a></div>
+            <div class="modal__btn"><input type="submit" class="btn" value="Войти"></div>
             <div class="modal__link"><a href="#modal_register" rel="modal:open">Регистрация</a></div>
             <div class="modal__socials">
                 <div class="modal__socials__title">
@@ -373,14 +375,22 @@
                 </svg>
             </a>
         </div>
-        <div class="modal__body">
+        <form class="modal__body" data-parsley-validate>
             <div class="modal__form">
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Ваш телефон" class="in-phone">
-                <input type="password" placeholder="Пароль (6 символов)">
-                <input type="password" placeholder="Повторите пароль">
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Ваше имя" required data-parsley-no-focus>
+                </div>
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Ваш телефон" class="in-phone" required data-parsley-no-focus>
+                </div>
+                <div class="modal__form__input">
+                    <input type="password" placeholder="Пароль (6 символов)" required data-parsley-no-focus>
+                </div>
+                <div class="modal__form__input">
+                    <input type="password" placeholder="Повторите пароль" required data-parsley-no-focus>
+                </div>
             </div>
-            <div class="modal__btn"><a href="personal_data.html" class="btn">Регистрация</a></div>
+            <div class="modal__btn"><input type="submit" class="btn" value="Регистрация"></div>
             <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>
             <div class="modal__socials">
                 <div class="modal__socials__title">
@@ -400,7 +410,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
     <div id="modal_rem_email" class="modal">
         <div class="modal__head">
@@ -412,9 +422,11 @@
                 </svg>
             </a>
         </div>
-        <form class="modal__body">
+        <form class="modal__body" data-parsley-validate>
             <div class="modal__form">
-                <input type="email" placeholder="E-mail">
+                <div class="modal__form__input">
+                    <input type="email" placeholder="E-mail" required data-parsley-no-focus>
+                </div>
             </div>
             <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Отправить</a></div>
             <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>
@@ -434,14 +446,16 @@
                 </svg>
             </a>
         </div>
-        <form class="modal__body">
+        <form class="modal__body" data-parsley-validate>
             <div class="modal__form">
-                <input type="text" placeholder="Телефон" class="in-phone">
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Телефон" class="in-phone" required data-parsley-no-focus>
+                </div>
             </div>
             <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Получить код</a></div>
             <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>
             <div class="modal__text">
-                <a href="#modal_rem_phone" rel="modal:open">Восстановите пароль по e-mail</a>
+                <a href="#modal_rem_email" rel="modal:open">Восстановите пароль по e-mail</a>
                 <p>Служба поддержки 8 800 1000 750</p>
             </div>
         </form>
@@ -456,11 +470,13 @@
                 </svg>
             </a>
         </div>
-        <form class="modal__body">
+        <form class="modal__body" data-parsley-validate>
             <div class="modal__form">
-                <input type="text" placeholder="Код подтверждения">
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Код подтверждения" required data-parsley-no-focus>
+                </div>
             </div>
-            <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Отправить</a></div>
+            <div class="modal__btn"><input type="submit" class="btn" value="Отправить"></div>
             <div class="modal__link"><a href="#modal_rem_phone" rel="modal:open">Ввести другой номер телефона</a></div>
             <div class="modal__text">
                 <p>Не приходит SMS на телефон?</p>
@@ -469,14 +485,7 @@
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="dist/js/svg4everybody.min.js"></script>
-    <script src="dist/js/jquery.visible.min.js"></script>
-    <script src="dist/js/jquery.zoom.min.js"></script>
-    <script src="dist/js/jquery.modal.min.js"></script>
-    <script src="dist/js/imask.js"></script>
-    <script src="dist/js/parsley.min.js"></script>
-    <script src="dist/js/i18n/ru.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="dist/js/bundle-min.js"></script>
     <script>
         svg4everybody();
     </script>

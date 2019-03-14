@@ -8,12 +8,15 @@
   </div>
   <form class="modal__body"  data-parsley-validate>
       <div class="modal__form">
-          <input type="email" placeholder="Адрес электронной почты" required data-parsley-no-focus>
-          <input type="password" placeholder="Пароль" required data-parsley-no-focus>
+          <div class="modal__form__input">
+            <input type="email" placeholder="Адрес электронной почты" required data-parsley-no-focus>
+          </div>
+          <div class="modal__form__input">
+            <input type="password" placeholder="Пароль" required data-parsley-no-focus>
+          </div>
       </div>
-      <input type="submit">
       <div class="modal__link"><a href="#modal_rem_email" rel="modal:open">Забыли пароль?</a></div>
-      <div class="modal__btn"><a href="@@pages.personal_data" class="btn">Войти</a></div>
+      <div class="modal__btn"><input type="submit" class="btn" value="Войти"></div>
       <div class="modal__link"><a href="#modal_register" rel="modal:open">Регистрация</a></div>
       @@include('_modal.socials.html')
     </form>

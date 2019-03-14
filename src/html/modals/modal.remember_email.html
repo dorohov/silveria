@@ -6,9 +6,11 @@
           @@include('../items/svg.html', {"name": "modal_close"})
       </a>
   </div>
-  <form class="modal__body">
+  <form class="modal__body" data-parsley-validate>
       <div class="modal__form">
-          <input type="email" placeholder="E-mail">
+          <div class="modal__form__input">
+            <input type="email" placeholder="E-mail" required data-parsley-no-focus>
+          </div>
       </div>
       <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Отправить</a></div>
       <div class="modal__link"><a href="#modal_login" rel="modal:open">Вернуться ко входу</a></div>

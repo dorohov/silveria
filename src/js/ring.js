@@ -19,7 +19,7 @@ window.onload = function() {
 
     ctxB.drawImage(img, 0, 0, canvas.width, canvas.height)
 
-    var fps = 5;
+    var fps = 3;
     var frame = 0;
     function draw() {
         setTimeout(function() {

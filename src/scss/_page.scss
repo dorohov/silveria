@@ -414,6 +414,10 @@
             width: auto;
         }
     }
+    &__left {
+        max-width: 930px;
+        width: 100%;
+    }
 }
 
 .error404 {

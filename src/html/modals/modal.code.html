@@ -6,11 +6,13 @@
           @@include('../items/svg.html', {"name": "modal_close"})
       </a>
   </div>
-  <form class="modal__body">
+  <form class="modal__body" data-parsley-validate>
       <div class="modal__form">
-          <input type="text" placeholder="Код подтверждения">
+          <div class="modal__form__input">
+            <input type="text" placeholder="Код подтверждения" required data-parsley-no-focus>
+          </div>
       </div>
-      <div class="modal__btn"><a href="#modal_code" rel="modal:open" class="btn">Отправить</a></div>
+      <div class="modal__btn"><input type="submit" class="btn" value="Отправить"></div>
       <div class="modal__link"><a href="#modal_rem_phone" rel="modal:open">Ввести другой номер телефона</a></div>
       <div class="modal__text">
             <p>Не приходит SMS на телефон?</p>

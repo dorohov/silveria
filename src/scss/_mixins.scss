@@ -1,7 +1,60 @@
+@keyframes favoriteOutHeart1 {
+    0% {
+        transform: scale(.7) translateY(0);
+    }
+    90% {
+        transform: scale(.3) translate3d(70px, -100px, 0);
+        opacity: .5;
+    }
+    95% {
+        opacity: .1;
+    }
+    100% {
+        content: none;
+    }
+}
+
+@keyframes favoriteOutHeart2 {
+    0% {
+        transform: scale(.7) translateY(0);
+    }
+    90% {
+        transform: scale(.3) translate3d(-12px, -120px, 0);
+        opacity: .5;
+    }
+    95% {
+        opacity: .1;
+    }
+    100% {
+        content: none;
+    }
+}
+
 @mixin gradient() {
     background: rgb(255,248,252);
     background: -moz-linear-gradient(45deg, rgba(255,248,252,1) 0%, rgba(251,246,250,1) 50%, rgba(240,242,255,1) 100%);
     background: -webkit-linear-gradient(45deg, rgba(255,248,252,1) 0%,rgba(251,246,250,1) 50%,rgba(240,242,255,1) 100%);
     background: linear-gradient(45deg, rgba(255,248,252,1) 0%,rgba(251,246,250,1) 50%,rgba(240,242,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff8fc', endColorstr='#f0f2ff',GradientType=1 );
+}
+
+@mixin favoriteButtonShadowEffect() {
+    border-radius: 100%;
+    position: relative;
+    &::before {
+        content: url(../../img/svg/heart.svg);
+        position: absolute;
+        animation: favoriteOutHeart1 3s ease;
+        top: 2px;
+        left: 2px;
+        transform: scale(.5);
+    }
+    &::after {
+        content: url(../../img/svg/heart.svg);
+        position: absolute;
+        animation: favoriteOutHeart2 3s ease;
+        top: 2px;
+        left: 2px;
+        transform: scale(.5);
+    }
 }

@@ -5,8 +5,9 @@
     @@include('main/head.html', {"title": "Главная"})
 </head>
 <body>
-        <script src="dist/js/loader.min.js"></script>
-    @@include('main/navbar.html')
+    @@include('main/navbar.html', {
+        "loader_type": "all"
+    })
     <main>
         @@include('pages/index/index.html')
     </main>

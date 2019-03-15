@@ -4,7 +4,9 @@
     @@include('main/head.html', {"title": "Промокоды"})
 </head>
 <body>
-    @@include('main/navbar.html')
+    @@include('main/navbar.html', {
+        "loader_type": "small"
+    })
     <main>
         @@include('pages/basket/index.html')
     </main>

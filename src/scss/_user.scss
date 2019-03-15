@@ -421,6 +421,24 @@
                         }
                     }
                 }
+                &.is--heart {
+                    span {
+                        &.is--active {
+                            display: none;
+                        }
+                    }
+                    &.is--active {
+                        span {
+                            &.is--active {
+                                display: block;
+                                @include favoriteButtonShadowEffect();
+                            }
+                            &.is--notactive {
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

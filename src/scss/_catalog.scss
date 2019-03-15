@@ -520,6 +520,7 @@ $border-color: rgba(#978683, .5);
             }
             .is--active {
                 span {
+                    @include favoriteButtonShadowEffect();
                     &.is--active {
                         display: block;
                     }
@@ -845,6 +846,9 @@ $border-color: rgba(#978683, .5);
                 }
                 &.is--active {
                     span {
+                        &.is--icon {
+                            @include favoriteButtonShadowEffect();
+                        }
                         &.is--notactive {
                             display: none;
                         }

@@ -10,6 +10,10 @@
 </head>
 
 <body>
+
+    <script src="dist/js/loader_small.js"></script>
+
+
     <header>
         <div class="navbar">
             <div class="navbar__top">
@@ -105,6 +109,8 @@
                         <li><a href="catalog_categories.html">Серьги</a></li>
                         <li><a href="catalog_categories.html">Подвески</a></li>
                         <li><a href="catalog_categories.html">Броши</a></li>
+                    </ul>
+                    <ul>
                         <li><a href="catalog_categories.html">Печатки</a></li>
                         <li><a href="catalog_categories.html">Вставки</a></li>
                         <li><a href="catalog_categories.html">Помолвочные кольца</a></li>
@@ -114,6 +120,8 @@
                         <li><a href="catalog_categories.html">Mystery</a></li>
                         <li><a href="catalog_categories.html">New Look</a></li>
                         <li><a href="catalog_categories.html">Just</a></li>
+                    </ul>
+                    <ul>
                         <li><a href="catalog_categories.html">Galaxy</a></li>
                         <li><a href="catalog_categories.html">Favorite</a></li>
                         <li><a href="catalog_categories.html">Etude</a></li>
@@ -127,6 +135,8 @@
                         <li><a href="catalog_categories.html">Mystery</a></li>
                         <li><a href="catalog_categories.html">New Look</a></li>
                         <li><a href="catalog_categories.html">Just</a></li>
+                    </ul>
+                    <ul>
                         <li><a href="catalog_categories.html">Galaxy</a></li>
                         <li><a href="catalog_categories.html">Favorite</a></li>
                         <li><a href="catalog_categories.html">Etude</a></li>
@@ -192,85 +202,97 @@
                             </div>
                             <div class="basket__block__price">124 040 &#8381;</div>
                             <div class="basket__block__btns">
-                                <button class="is--heart">
-
-
-                                    <svg class="svg-heart-dims svg is--heart">
-                                        <use xlink:href="img/svg/sprites.svg#heart"></use>
-                                    </svg>
-
-                                </button>
-                                <button class="is--dustbin">
-                                    <svg class="svg-dustbin-dims svg is--dustbin">
-                                        <use xlink:href="img/svg/sprites.svg#dustbin"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="basket__block">
-                            <div class="basket__block__img">
-                                <a href="item.html"><img src="img/item.png" alt=""></a>
-                            </div>
-                            <div class="basket__block__name">
-                                <div class="basket__block__name__title"><a href="item.html">Кольцо из золота с фианитами</a></div>
-                                <div class="basket__block__name__size">Размер: 16</div>
-                            </div>
-                            <div class="basket__block__count">
-                                <div class="countblock">
-                                    <button class="is--minus"><svg class="svg-minus-dims svg is--minus">
-                                            <use xlink:href="img/svg/sprites.svg#minus"></use>
-                                        </svg></button>
-                                    <input type="text" min="1" readonly value="2">
-                                    <button class="is--plus"><svg class="svg-plus-dims svg is--plus">
-                                            <use xlink:href="img/svg/sprites.svg#plus"></use>
-                                        </svg></button>
-                                </div>
-                            </div>
-                            <div class="basket__block__price">124 040 &#8381;</div>
-                            <div class="basket__block__btns">
-                                <button class="is--heart">
-
-
-                                    <svg class="svg-heart-dims svg is--heart">
-                                        <use xlink:href="img/svg/sprites.svg#heart"></use>
-                                    </svg>
-
-                                </button>
-                                <button class="is--dustbin">
-                                    <svg class="svg-dustbin-dims svg is--dustbin">
-                                        <use xlink:href="img/svg/sprites.svg#dustbin"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="basket__block">
-                            <div class="basket__block__img">
-                                <a href="item.html"><img src="img/item.png" alt=""></a>
-                            </div>
-                            <div class="basket__block__name">
-                                <div class="basket__block__name__title"><a href="item.html">Кольцо из золота с фианитами</a></div>
-                                <div class="basket__block__name__size">Размер: 16</div>
-                            </div>
-                            <div class="basket__block__count">
-                                <div class="countblock">
-                                    <button class="is--minus"><svg class="svg-minus-dims svg is--minus">
-                                            <use xlink:href="img/svg/sprites.svg#minus"></use>
-                                        </svg></button>
-                                    <input type="text" min="1" readonly value="2">
-                                    <button class="is--plus"><svg class="svg-plus-dims svg is--plus">
-                                            <use xlink:href="img/svg/sprites.svg#plus"></use>
-                                        </svg></button>
-                                </div>
-                            </div>
-                            <div class="basket__block__price">124 040 &#8381;</div>
-                            <div class="basket__block__btns">
-                                <button class="is--heart">
-
-                                    <span class="is--active"><svg class="svg-heart_fill-dims svg is--heart_fill">
+                                <button class="is--heart favorite_btn">
+                                    <span class="is--notactive">
+                                        <svg class="svg-heart-dims svg is--heart">
+                                            <use xlink:href="img/svg/sprites.svg#heart"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="is--active">
+                                        <svg class="svg-heart_fill-dims svg is--heart_fill">
                                             <use xlink:href="img/svg/sprites.svg#heart_fill"></use>
-                                        </svg></span>
-
-
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="is--dustbin">
+                                    <svg class="svg-dustbin-dims svg is--dustbin">
+                                        <use xlink:href="img/svg/sprites.svg#dustbin"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="basket__block">
+                            <div class="basket__block__img">
+                                <a href="item.html"><img src="img/item.png" alt=""></a>
+                            </div>
+                            <div class="basket__block__name">
+                                <div class="basket__block__name__title"><a href="item.html">Кольцо из золота с фианитами</a></div>
+                                <div class="basket__block__name__size">Размер: 16</div>
+                            </div>
+                            <div class="basket__block__count">
+                                <div class="countblock">
+                                    <button class="is--minus"><svg class="svg-minus-dims svg is--minus">
+                                            <use xlink:href="img/svg/sprites.svg#minus"></use>
+                                        </svg></button>
+                                    <input type="text" min="1" readonly value="2">
+                                    <button class="is--plus"><svg class="svg-plus-dims svg is--plus">
+                                            <use xlink:href="img/svg/sprites.svg#plus"></use>
+                                        </svg></button>
+                                </div>
+                            </div>
+                            <div class="basket__block__price">124 040 &#8381;</div>
+                            <div class="basket__block__btns">
+                                <button class="is--heart favorite_btn">
+                                    <span class="is--notactive">
+                                        <svg class="svg-heart-dims svg is--heart">
+                                            <use xlink:href="img/svg/sprites.svg#heart"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="is--active">
+                                        <svg class="svg-heart_fill-dims svg is--heart_fill">
+                                            <use xlink:href="img/svg/sprites.svg#heart_fill"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="is--dustbin">
+                                    <svg class="svg-dustbin-dims svg is--dustbin">
+                                        <use xlink:href="img/svg/sprites.svg#dustbin"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="basket__block">
+                            <div class="basket__block__img">
+                                <a href="item.html"><img src="img/item.png" alt=""></a>
+                            </div>
+                            <div class="basket__block__name">
+                                <div class="basket__block__name__title"><a href="item.html">Кольцо из золота с фианитами</a></div>
+                                <div class="basket__block__name__size">Размер: 16</div>
+                            </div>
+                            <div class="basket__block__count">
+                                <div class="countblock">
+                                    <button class="is--minus"><svg class="svg-minus-dims svg is--minus">
+                                            <use xlink:href="img/svg/sprites.svg#minus"></use>
+                                        </svg></button>
+                                    <input type="text" min="1" readonly value="2">
+                                    <button class="is--plus"><svg class="svg-plus-dims svg is--plus">
+                                            <use xlink:href="img/svg/sprites.svg#plus"></use>
+                                        </svg></button>
+                                </div>
+                            </div>
+                            <div class="basket__block__price">124 040 &#8381;</div>
+                            <div class="basket__block__btns">
+                                <button class="is--heart favorite_btn">
+                                    <span class="is--notactive">
+                                        <svg class="svg-heart-dims svg is--heart">
+                                            <use xlink:href="img/svg/sprites.svg#heart"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="is--active">
+                                        <svg class="svg-heart_fill-dims svg is--heart_fill">
+                                            <use xlink:href="img/svg/sprites.svg#heart_fill"></use>
+                                        </svg>
+                                    </span>
                                 </button>
                                 <button class="is--dustbin">
                                     <svg class="svg-dustbin-dims svg is--dustbin">

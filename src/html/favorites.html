@@ -4,7 +4,9 @@
     @@include('main/head.html', {"title": "Избранное"})
 </head>
 <body>
-    @@include('main/navbar.html')
+    @@include('main/navbar.html', {
+        "loader_type": "small"
+    })
     <main>
         @@include('pages/user/favorites.html')
     </main>

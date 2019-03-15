@@ -521,6 +521,135 @@ $category-block-border: #978683;
     }
 }
 
+.qwer {
+    ul {
+        position: absolute;
+        width: 100%;
+        width: 273px;
+        height: 174px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        li {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 1s all ease;
+            &.is--active {
+                visibility: visible;
+                opacity: 1;
+            }
+            // span {
+            //     display: block;
+            //     width: 100%;
+            //     height: 100%;
+            //     &::after {
+            //         content: '';
+            //         background: url(../../img/framelist.png);
+            //         width: 100%;
+            //         height: 100%;
+            //         display: block;
+            //         background-size: cover;
+            //     }
+            // }
+            // &.is--f1 {
+            //     span {
+            //         &::after {
+            //             background-position: 0 0;
+            //         }
+            //     }
+            // }
+            // &.is--f2 {
+            //     span {
+            //         &::after {
+            //             background-position: -273px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f3 {
+            //     span {
+            //         &::after {
+            //             background-position: -546px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f4 {
+            //     span {
+            //         &::after {
+            //             background-position: -819px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f5 {
+            //     span {
+            //         &::after {
+            //             background-position: -1092px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f6 {
+            //     span {
+            //         &::after {
+            //             background-position: -1365px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f7 {
+            //     span {
+            //         &::after {
+            //             background-position: -1638px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f8 {
+            //     span {
+            //         &::after {
+            //             background-position: -1911px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f9 {
+            //     span {
+            //         &::after {
+            //             background-position: -2184px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f10 {
+            //     span {
+            //         &::after {
+            //             background-position: -2457px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f11 {
+            //     span {
+            //         &::after {
+            //             background-position: -2730px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f12 {
+            //     span {
+            //         &::after {
+            //             background-position: -3003px 0;
+            //         }
+            //     }
+            // }
+            // &.is--f13 {
+            //     span {
+            //         &::after {
+            //             background-position: -3276px 0;
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
 @media (max-width: $resp1200) {
     .breadcrumbs {
         margin-bottom: 15px;
@@ -594,6 +723,62 @@ $category-block-border: #978683;
                     margin-top: -5%;
                 }
             }
+        }
+    }
+}
+
+// Ring
+
+@media (max-width: 840px) {
+    .ring {
+        &__img {
+            &__block {
+                &__inner {
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+    .qwer {
+        ul {
+            width: 170px;
+            height: 88px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .ring {
+        &__img {
+            &__block {
+                &__inner {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+    .qwer {
+        ul {
+            width: 110px;
+            height: 54px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .ring {
+        &__img {
+            &__block {
+                &__inner {
+                    max-width: 240px;
+                }
+            }
+        }
+    }
+    .qwer {
+        ul {
+            width: 77px;
+            height: 54px;
         }
     }
 }

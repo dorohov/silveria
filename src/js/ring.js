@@ -1,40 +1,17 @@
-window.onload = function() {
-    var canvas = document.getElementById("bRing")
-    var ctx = canvas.getContext('2d')
+(function($) {
+    "use strict"
+    $(function() {
+        
+        var frames = $('li.is--frame'),
+            currentFrame = frames.length - 1
 
-    var canvasB = document.getElementById("bRingB")
-    var ctxB = canvasB.getContext('2d')
+        setInterval(function() {
+            $('li.is--frame').removeClass('is--active')
+            $(frames[currentFrame]).addClass('is--active')
+            currentFrame--
+            if(currentFrame < 0) currentFrame = frames.length - 1
+        }, 1000)
 
 
-    var img = document.getElementById('bRingImg')
-    var frames = document.querySelectorAll('#bRingSlides > img')
-    var alpha = .5,   /// current alpha value
-        delta = 0.02;
-
-    canvas.height = 604;
-    canvas.width = 461;
-
-    canvasB.height = 604;
-    canvasB.width = 461;
-
-    ctxB.drawImage(img, 0, 0, canvas.width, canvas.height)
-
-    var fps = 3;
-    var frame = 0;
-    function draw() {
-        setTimeout(function() {
-            alpha += delta;
-            if (alpha <= 0 || alpha >= .6) delta =- delta;
-            
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.globalAlpha = alpha;
-            ctx.drawImage(frames[frame], 110, 0, 241, 164)
-            if(frame < 5) frame++
-            else if(frame >= 5) frame = 0
-            requestAnimationFrame(draw);
-
-        }, 1000 / fps);
-    }
-
-    draw()
-}
+    })
+})(jQuery);

@@ -15,13 +15,13 @@
     </div>
     <div class="basket__block__price">124 040 &#8381;</div>
     <div class="basket__block__btns">
-        <button class="is--heart">
-            @@if(favorite) {
-                <span class="is--active">@@include('../../items/svg.html', {"name": "heart_fill"})</span>
-            }
-            @@if(!favorite) {
+        <button class="is--heart favorite_btn">
+            <span class="is--notactive">
                 @@include('../../items/svg.html', {"name": "heart"})
-            }
+            </span>
+            <span class="is--active">
+                @@include('../../items/svg.html', {"name": "heart_fill"})
+            </span>
         </button>
         <button class="is--dustbin">
             @@include('../../items/svg.html', {"name": "dustbin"})

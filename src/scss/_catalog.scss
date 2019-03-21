@@ -217,6 +217,7 @@ $border-color: rgba(#978683, .5);
                 align-items: flex-end;
                 max-width: 300px;
                 width: 100%;
+                padding-bottom: 3px;
             }
             &.is--right {
                 max-width: $main-container-width;

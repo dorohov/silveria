@@ -74,6 +74,16 @@
                 </div>
             </div>
         </div>
+        <div class="navbar__search">
+            <div class="navbar__search__inner">
+                <form action="#">
+                    <input type="text" placeholder="Поиск по каталогу">
+                    <button type="submit">
+                        @@include('../items/svg.html', {"name": "search_input"})
+                    </button>
+                </form>
+            </div>
+        </div>
         <div class="navbar__dropdown" data-dropdownid="1">
             <nav class="navbar__dropdown__inner">
                 <ul>
@@ -114,16 +124,6 @@
                     <li><a href="@@pages.catalog_categories">Etude</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="navbar__search">
-            <div class="navbar__search__inner">
-                <form action="#">
-                    <input type="text" placeholder="Поиск по каталогу">
-                    <button type="submit">
-                        @@include('../items/svg.html', {"name": "search_input"})
-                    </button>
-                </form>
-            </div>
         </div>
     </div>
 </header>

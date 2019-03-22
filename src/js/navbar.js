@@ -53,7 +53,7 @@
         
         function showDropdown(id) {
             hideDropdown()
-            toggleSearchPanel(true)
+            // toggleSearchPanel(true)
             $('.navbar__dropdown[data-dropdownid="' + id + '"]').addClass('is--show')
         }
 

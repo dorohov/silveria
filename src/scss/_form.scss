@@ -16,6 +16,11 @@
             color: #7C7B7B;
             border: 1px solid transparent;
             transition: .25s all ease;
+            &:read-only {
+                background: transparent;
+                border-color:rgba(#978683, .5);
+                color: #373737;
+            }
             &::placeholder {
                 color: #7C7B7B;
                 transition: .25s all ease;
@@ -83,6 +88,11 @@
         &.is--promo {
             input[type="text"] {
                 margin-right: 15px;
+            }
+            &-text {
+                font-weight: 300;
+                padding-top: 15px;
+                display: none;
             }
         }
         .is--heading {

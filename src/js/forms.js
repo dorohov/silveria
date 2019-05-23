@@ -54,5 +54,23 @@
             }
         }
 
+        var btnData = $('.basket__promo .btn').data('apply')
+        $('.basket__promo .btn').on('click', function() {
+            var _this = $(this)
+            if(btnData) {
+                $('.basket__promo input[type="text"]').attr('readonly', true)
+                $('.basket__promo .form__group.is--promo-text').show();
+                _this.html('Отменить')
+            }else {
+                $('.basket__promo input[type="text"]').attr('readonly', false)
+                $('.basket__promo .form__group.is--promo-text').hide();
+                _this.html('Применить')
+            }
+            btnData = !btnData
+
+            $(this).attr('data-apply', btnData)
+
+        })
+
     })
 })(jQuery);

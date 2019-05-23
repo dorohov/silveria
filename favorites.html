@@ -826,6 +826,77 @@
             </div>
         </form>
     </div>
+    <div id="modal_sizeon" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Как узнать размер</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="modal__body">
+            <div class="modal__body__text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis vitae cupiditate magni harum dolor ad vel, dolores voluptatum maiores est debitis. Voluptates nulla officia pariatur hic in laboriosam similique animi!</p>
+                <p>Fuga quia deleniti maiores, quidem vitae voluptatem voluptatibus harum facere? Molestias vero optio illum, atque rem vel est magnam perferendis aliquam iusto earum accusamus velit cupiditate aperiam ea consequatur eaque!</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_sizetw" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Сообщить <br> о наличии</div>
+            <div class="modal__head__desc">Чтобы узнать, когда изделие появится в магазинах вашего города, укажите имя и e-mail. Мы обязательно свяжемся с вами.</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <form class="modal__body" data-parsley-validate>
+            <div class="modal__form">
+                <div class="modal__form__input">
+                    <input type="text" placeholder="Ваше имя" required data-parsley-no-focus>
+                </div>
+                <div class="modal__form__input">
+                    <input type="email" placeholder="E-mail" required data-parsley-no-focus>
+                </div>
+                <div class="modal__form__input">
+                    <div class="modal__form__input__label">Размер</div>
+                    <div class="modal__form__sizes">
+                        <div class="item__container__sizes__form__inp">
+                            <input type="radio" id="sm15" name="size_m" checked>
+                            <label for="sm15"><span>15</span></label>
+                        </div>
+                        <div class="item__container__sizes__form__inp">
+                            <input type="radio" id="sm155" name="size_m" checked>
+                            <label for="sm155"><span>15,5</span></label>
+                        </div>
+                        <div class="item__container__sizes__form__inp">
+                            <input type="radio" id="sm16" name="size_m">
+                            <label for="sm16"><span>16</span></label>
+                        </div>
+                        <div class="item__container__sizes__form__inp">
+                            <input type="radio" id="sm165" name="size_m">
+                            <label for="sm165"><span>16,5</span></label>
+                        </div>
+                        <div class="item__container__sizes__form__inp">
+                            <input type="radio" id="sm17" name="size_m">
+                            <label for="sm17"><span>17</span></label>
+                        </div>
+                        <div class="item__container__sizes__form__inp">
+                            <input type="radio" id="sm175" name="size_m">
+                            <label for="sm175"><span>17,5</span></label>
+                        </div>
+                        <div class="item__container__sizes__form__inp">
+                            <input type="radio" id="sm18" name="size_m">
+                            <label for="sm18"><span>18</span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__btn"><input type="submit" class="btn" value="Отправить"></div>
+        </form>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="dist/js/bundle-min.js"></script>
     <script>

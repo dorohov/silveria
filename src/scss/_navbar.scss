@@ -33,6 +33,19 @@ header {
         &__icons {
             display: flex;
             justify-content: space-between;
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: flex-end;
+            }
+            &__num {
+                display: inline-block;
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 15px;
+                margin-right: 5px;
+                color: #373737;
+            }
         }
         &__logo {
             svg {

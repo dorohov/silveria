@@ -50,7 +50,7 @@
         })
 
         $('.favorite_btn').on('click', function() {
-            $(this).toggleClass('is--active')
+            // $(this).toggleClass('is--active')
         })
 
         

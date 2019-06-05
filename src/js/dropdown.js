@@ -1,10 +1,14 @@
 (function($) {
     "use strict"
     $(function() {
-        
-        $('.customselect__title').on('click', function() {
+
+        $('main').on('click', '.customselect__title', function() {
             $(this).parent('.customselect').toggleClass('is--open')
         })
+        
+        // $('.customselect__title').on('click', function() {
+        //     $(this).parent('.customselect').toggleClass('is--open')
+        // })
 
         $(document).on('click', function(e) {
             var targets = $(e.target).closest('.customselect')

@@ -608,6 +608,17 @@ $border-color: rgba(#978683, .5);
             margin-bottom: 40px;
         }
     }
+    &:first-child {
+        .card {
+            &__info {
+                right: auto !important;
+                left: 0% !important;
+                &__inner {
+                    padding: 0 0 0 50% !important;
+                }
+            }
+        }
+    }
     &:nth-child(3n-1),
     &:nth-child(3n-2) {
         .card {

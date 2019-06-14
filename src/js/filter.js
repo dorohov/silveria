@@ -55,9 +55,9 @@
 
         
 
-        $('.item__container__btns.is--favorite a').on('click', function() {
-            $(this).parent('.item__container__btns.is--favorite').toggleClass('is--active')
-        })
+        // $('.item__container__btns.is--favorite a').on('click', function() {
+        //     $(this).parent('.item__container__btns.is--favorite').toggleClass('is--active')
+        // })
 
     })
 })(jQuery);

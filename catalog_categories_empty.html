@@ -12,7 +12,7 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#000000">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <title>Личный кабинет - SILVERIA</title>
+    <title>Каталог - SILVERIA</title>
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -165,157 +165,289 @@
         </div>
     </header>
     <main>
-        <div class="page user">
-            <div class="user__breadcrumbs">
-                <div class="breadcrumbs">
-                    <ul>
-
-                        <li><a href="index.html">Главная</a></li>
-
-                        <li><span>Личный кабинет</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="user__heading">
-                <h1 class="heading is--left">
-                    Личный кабинет
-
-                    <a href="index.html">Выйти из системы</a>
-
-                </h1>
-            </div>
-            <div class="user__menu">
+        <section class="page">
+            <div class="breadcrumbs">
                 <ul>
-                    <li>
-                        <div class="user__menu__block is--first">
-                            <div class="user__menu__block__icon">
-                                <span>
-                                    <svg class="svg-user-dims svg is--user">
-                                        <use xlink:href="img/svg/sprites.svg#user"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="user__menu__block__text">Маргарита</div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="personal_data.html" class="user__menu__block is--active">
-                            <div class="user__menu__block__icon">
-                                <span>
-                                    <svg class="svg-user-dims svg is--user">
-                                        <use xlink:href="img/svg/sprites.svg#user"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="user__menu__block__text">Личные данные</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="my_order.html" class="user__menu__block ">
-                            <div class="user__menu__block__icon">
-                                <span>
-                                    <svg class="svg-clock-dims svg is--clock">
-                                        <use xlink:href="img/svg/sprites.svg#clock"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="user__menu__block__text">Мои заказы</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="favorites.html" class="user__menu__block ">
-                            <div class="user__menu__block__icon">
-                                <span>
-                                    <svg class="svg-heart-dims svg is--heart">
-                                        <use xlink:href="img/svg/sprites.svg#heart"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="user__menu__block__text">Избранное</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="promocode.html" class="user__menu__block ">
-                            <div class="user__menu__block__icon">
-                                <span>
-                                    <svg class="svg-card-dims svg is--card">
-                                        <use xlink:href="img/svg/sprites.svg#card"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="user__menu__block__text">Промокоды</div>
-                        </a>
-                    </li>
+
+                    <li><a href="index.html">Главная</a></li>
+
+                    <li><a href="catalog_production.html">Каталог</a></li>
+
+                    <li><span>Кольца</span></li>
                 </ul>
             </div>
-            <div class="user__forms">
-                <form action="" data-parsley-validate>
-                    <div class="user__forms__block">
-                        <div class="user__forms__block__heading">Обо мне</div>
-                        <div class="user__forms__block__inputs">
-                            <div class="user__forms__group form__group">
-                                <input type="text" placeholder="Имя" value="Маргарита" required data-parsley-no-focus>
-                            </div>
-                            <div class="user__forms__group form__group">
-                                <input type="text" placeholder="Фамилия">
-                            </div>
-                            <div class="user__forms__group form__group">
-                                <input type="email" placeholder="E-mail">
-                            </div>
-                            <div class="user__forms__group form__group">
-                                <input type="text" placeholder="Телефон" class="in-phone" required data-parsley-no-focus>
-                            </div>
-                            <div class="user__forms__group form__group">
-                                <input type="text" placeholder="День рождения">
-                            </div>
+            <div class="catalog__category">
+                <div class="catalog__category__head is--container">
+                    <div class="catalog__category__head is--left">
+                        <div class="catalog__category__head__name">
+                            <h1 class="heading is--left">
+                                Кольца
+
+                            </h1>
                         </div>
                     </div>
-                    <div class="user__forms__block">
-                        <div class="user__forms__block__heading">Мой пароль</div>
-                        <div class="user__forms__block__inputs">
-                            <div class="user__forms__group pass_tog is--password form__group">
-                                <button type="button" class="is--pass-show is--ic"><svg class="svg-pass_hide-dims svg is--pass_hide">
-                                        <use xlink:href="img/svg/sprites.svg#pass_hide"></use>
-                                    </svg></button>
-                                <button type="button" class="is--pass-hide is--ic"><svg class="svg-pass_show-dims svg is--pass_show">
-                                        <use xlink:href="img/svg/sprites.svg#pass_show"></use>
-                                    </svg></button>
-                                <input type="password" placeholder="Текущий пароль">
-                            </div>
-                            <div class="user__forms__group pass_tog is--password form__group">
-                                <button type="button" class="is--pass-show is--ic"><svg class="svg-pass_hide-dims svg is--pass_hide">
-                                        <use xlink:href="img/svg/sprites.svg#pass_hide"></use>
-                                    </svg></button>
-                                <button type="button" class="is--pass-hide is--ic"><svg class="svg-pass_show-dims svg is--pass_show">
-                                        <use xlink:href="img/svg/sprites.svg#pass_show"></use>
-                                    </svg></button>
-                                <input type="password" placeholder="Новый пароль">
-                            </div>
+                    <div class="catalog__category__head is--right">
+                        <div class="catalog__category__head__filters is--left">
+                            <ul>
+                                <li>
+                                    <span>Кольца</span>
+                                    <button><svg class="svg-close-dims svg is--close">
+                                            <use xlink:href="img/svg/sprites.svg#close"></use>
+                                        </svg></button>
+                                </li>
+                                <li>
+                                    <span>Обручальные</span>
+                                    <button><svg class="svg-close-dims svg is--close">
+                                            <use xlink:href="img/svg/sprites.svg#close"></use>
+                                        </svg></button>
+                                </li>
+                            </ul>
+                            <a href="javascript:void(0)" class="is--remove">Очистить фильтр</a>
+                        </div>
+                        <div class="catalog__category__head__filters is--right">
+                            <form action="">
+                                <div class="catalog__category__head__filters__select">
+                                    <label for="catsel" class="is--text">
+                                        Сортировать:
+                                    </label>
+                                    <div class="customselect">
+                                        <div class="customselect__title">По популярности</div>
+                                        <div class="customselect__list">
+                                            <ul>
+                                                <li class="is--current"><a href="#">По популярности</a></li>
+                                                <li><a href="#">По возрастанию цены</a></li>
+                                                <li><a href="#">По по убыванию цены</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="catalog__category__head__fbtn">
+                            <button id="filshow"><span><svg class="svg-filter-dims svg is--filter">
+                                        <use xlink:href="img/svg/sprites.svg#filter"></use>
+                                    </svg></span> Фильтры</button>
                         </div>
                     </div>
-                    <div class="user__forms__block">
-                        <div class="user__forms__block__heading">Местоположение</div>
-                        <div class="user__forms__block__inputs">
-                            <div class="user__forms__group is--select form__group">
-                                <label for="country"><svg class="svg-dropdown-dims svg is--dropdown">
-                                        <use xlink:href="img/svg/sprites.svg#dropdown"></use>
-                                    </svg></label>
-                                <select name="country" id="country">
-                                    <option value="1">Орел</option>
-                                    <option value="1">Москва</option>
-                                    <option value="1">Новгород</option>
-                                    <option value="1">Санкт-Петербург</option>
-                                </select>
-                            </div>
+                </div>
+                <div class="catalog__category__wrap">
+                    <div class="catalog__category__aside">
+                        <button id="filclose"><span></span></button>
+                        <div class="catalog__category__filter">
+                            <div class="catalog__category__filter__title">Вид украшения</div>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="cat11" name="cat1">
+                                    <label for="cat11">Кольца</label>
+                                    <ul>
+                                        <li>
+                                            <input type="radio" id="cat111" name="cat111" checked>
+                                            <label for="cat111">Обручальные</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="cat112" name="cat111">
+                                            <label for="cat112">Помолвочные</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="cat113" name="cat111">
+                                            <label for="cat113">Наборные</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="cat114" name="cat111">
+                                            <label for="cat114">Печатки</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat12" name="cat1">
+                                    <label for="cat12">Серьги</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat13" name="cat1">
+                                    <label for="cat13">Браслеты</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat14" name="cat1">
+                                    <label for="cat14">Подвески</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat15" name="cat1">
+                                    <label for="cat15">Броши</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat16" name="cat1">
+                                    <label for="cat16">Браслеты</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat17" name="cat1">
+                                    <label for="cat17">Цепи</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat18" name="cat1" checked>
+                                    <label for="cat18">Колье</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat19" name="cat1">
+                                    <label for="cat19">Брелоки</label>
+                                </li>
+                            </ul>
+                            <div class="catalog__category__filter__alllink">Показать все</div>
+                        </div>
+                        <div class="catalog__category__filter">
+                            <div class="catalog__category__filter__title">Цена</div>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="cat21" name="cat2" checked>
+                                    <label for="cat21">до 2000 руб</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat22" name="cat2">
+                                    <label for="cat22">от 2000 до 5000 руб</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat23" name="cat2">
+                                    <label for="cat23">от 5000 до 10000 руб</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat24" name="cat2">
+                                    <label for="cat24">от 10000 до 50000 руб</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat25" name="cat2">
+                                    <label for="cat25">от 50000 до 100000 руб</label>
+                                </li>
+                            </ul>
+                            <div class="catalog__category__filter__alllink">Показать все</div>
+                        </div>
+                        <div class="catalog__category__filter">
+                            <div class="catalog__category__filter__title">Металл</div>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="cat31" name="cat3" checked>
+                                    <label for="cat31">Золото</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat32" name="cat3">
+                                    <label for="cat32">Серебро</label>
+                                </li>
+                            </ul>
+                            <div class="catalog__category__filter__alllink">Показать все</div>
+                        </div>
+                        <div class="catalog__category__filter">
+                            <div class="catalog__category__filter__title">Цвет</div>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="cat41" name="cat4" checked>
+                                    <label for="cat41">Красный</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat42" name="cat4">
+                                    <label for="cat42">Белый+красный</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat43" name="cat4">
+                                    <label for="cat43">Желтый</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat44" name="cat4">
+                                    <label for="cat44">Синий</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat45" name="cat4">
+                                    <label for="cat45">Сиреневый</label>
+                                </li>
+                            </ul>
+                            <div class="catalog__category__filter__alllink">Показать все</div>
+                        </div>
+                        <div class="catalog__category__filter">
+                            <div class="catalog__category__filter__title">Проба</div>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="cat51" name="cat5" checked>
+                                    <label for="cat51">585</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat52" name="cat5">
+                                    <label for="cat52">925</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat53" name="cat5">
+                                    <label for="cat53">500</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat54" name="cat5">
+                                    <label for="cat54">123</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat55" name="cat5">
+                                    <label for="cat55">456</label>
+                                </li>
+                            </ul>
+                            <div class="catalog__category__filter__alllink">Показать все</div>
+                        </div>
+                        <div class="catalog__category__filter">
+                            <div class="catalog__category__filter__title">Покрытие</div>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="cat61" name="cat6" checked>
+                                    <label for="cat61">Родирование</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat62" name="cat6">
+                                    <label for="cat62">Без покрытия</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat63" name="cat6">
+                                    <label for="cat63">Золочение</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat64" name="cat6">
+                                    <label for="cat64">Полузолочение</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat65" name="cat6">
+                                    <label for="cat65">Полуродирование</label>
+                                </li>
+                            </ul>
+                            <div class="catalog__category__filter__alllink">Показать все</div>
+                        </div>
+                        <div class="catalog__category__filter">
+                            <div class="catalog__category__filter__title">Камень</div>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="cat71" name="cat7" checked>
+                                    <label for="cat71">Авантюрин</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat72" name="cat7">
+                                    <label for="cat72">Агат</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat73" name="cat7">
+                                    <label for="cat73">Агат моховой</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat74" name="cat7">
+                                    <label for="cat74">Изумруд</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="cat75" name="cat7">
+                                    <label for="cat75">Сапфир</label>
+                                </li>
+                            </ul>
+                            <div class="catalog__category__filter__alllink">Показать все</div>
                         </div>
                     </div>
-                    <div class="user__forms__block__submit">
-                        <input type="submit" value="Сохранить данные" class="btn">
+                    <div class="catalog__category__list">
+                        <div class="catalog__category__list__inner">
+                            <div class="catalog__category__list__empty">Товар по выбранным Вами категориям отсутствует</div>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
+    <div class="overlay"></div>
     <footer class="footer">
         <div class="footer__top">
             <div class="footer__top__inner">

@@ -237,7 +237,7 @@
                             <div class="catalog__category__filter__title">Вид украшения</div>
                             <ul>
                                 <li>
-                                    <input type="radio" id="cat11" name="cat1" checked>
+                                    <input type="radio" id="cat11" name="cat1">
                                     <label for="cat11">Кольца</label>
                                     <ul>
                                         <li>
@@ -283,7 +283,7 @@
                                     <label for="cat17">Цепи</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="cat18" name="cat1">
+                                    <input type="radio" id="cat18" name="cat1" checked>
                                     <label for="cat18">Колье</label>
                                 </li>
                                 <li>
@@ -331,6 +331,7 @@
                                     <label for="cat32">Серебро</label>
                                 </li>
                             </ul>
+                            <div class="catalog__category__filter__alllink">Показать все</div>
                         </div>
                         <div class="catalog__category__filter">
                             <div class="catalog__category__filter__title">Цвет</div>
@@ -1299,6 +1300,21 @@
             </div>
         </div>
     </div>
+    <div id="modal_sizeon_success" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Успешно</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="modal__body">
+            <div class="modal__body__text">
+                <p>При поступлении товара к нам, мы сообщим Вам об этом.</p>
+            </div>
+        </div>
+    </div>
     <div id="modal_sizetw" class="modal">
         <div class="modal__head">
             <div class="modal__head__text">Сообщить <br> о наличии</div>
@@ -1354,11 +1370,59 @@
             <div class="modal__btn"><input type="submit" class="btn" value="Отправить"></div>
         </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="dist/js/bundle-min.js"></script>
-    <script>
-        svg4everybody();
-    </script>
+    <div id="modal_subs_error" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Ошибка</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="modal__body">
+            <div class="modal__body__text">
+                <p>Указан неверный адрес подписки.</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_subs_success" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Успешно</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="modal__body">
+            <div class="modal__body__text">
+                <p>Адрес подписки успешно добавлен.</p>
+                <p>На указанный адрес ушло письмо для подтверждения.</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal_basket_success" class="modal">
+        <div class="modal__head">
+            <div class="modal__head__text">Добавлен</div>
+            <a href="javascript:void(0)" rel="modal:close" class="modal__head__close">
+                <svg class="svg-modal_close-dims svg is--modal_close">
+                    <use xlink:href="img/svg/sprites.svg#modal_close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="modal__body">
+            <div class="modal__body__text">
+                <p>Товар добавлен в корзину</p>
+            </div>
+            <br>
+            <div class="modal__btn"><a href="basket.html" class="btn">Перейти</a>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="dist/js/bundle.js"></script>
+        <script>
+            svg4everybody();
+        </script>
 </body>
 
 </html>

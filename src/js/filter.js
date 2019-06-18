@@ -5,14 +5,27 @@
         var filters = $('.catalog__category__filter')
         var items = new Array()
         var btnStartText
+        var itemLength
 
         for(var i = 0; i < filters.length; i++) {
             items.push($(filters[i]).children('ul').children('li'))
+
+            itemLength = $(filters).length
+        }
+
+        for(var j = 0; j < itemLength; j++) {
+            if($(filters[j]).children('ul').children('li').length < 3) {
+                $(filters[j]).children('.catalog__category__filter__alllink').remove()
+            }
         }
 
         for(var i = 0; i < items.length; i++) {
             for(var j = items[i].length; j > 2; j--) {
-                $(items[i][j]).hide().addClass('is--hidden')
+                if($(items[i][j]).children('input:checked').length > 0) {
+                    
+                }else {
+                    $(items[i][j]).hide().addClass('is--hidden')
+                }
             }
         }
 

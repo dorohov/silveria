@@ -252,6 +252,7 @@ $category-block-border: #978683;
         color: #1E1E1E;
         font-weight: 300;
         padding-right: 20px;
+        white-space: nowrap;
         &::after {
             content: url(../../img/svg/dropdown.svg);
             position: absolute;
@@ -271,6 +272,7 @@ $category-block-border: #978683;
         visibility: hidden;
         transition: .25s all ease;
         cursor: default;
+        white-space: nowrap;
         li {
             white-space: nowrap;
             a {
